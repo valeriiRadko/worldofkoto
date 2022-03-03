@@ -1,0 +1,77 @@
+.whatiscontainer {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatistitle {
+  font-family: Futuro;
+  font-size: 46px;
+  color: #007369;
+  text-align: center;
+  width: 100vw;
+}
+
+.whatiscontent {
+  width: 70vw;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+.whatissubcontentcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f0f3f4 100%);
+}
+.whatiscontentreverse {
+  width: 70vw;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 200px;
+}
+
+.whatiscontentimagebordercontainer {
+  border: 10px solid #eaf7f5;
+  box-sizing: border-box;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.whatiscontentimage {
+  width: 65vh;
+  height: 65vh;
+  position: relative;
+  /* background-color: red; */
+}
+
+.whatiscontenttext {
+  position: relative;
+  max-height: 40vh;
+  width: 22.5vw;
+  height: 100%;
+  position: relative;
+  margin-top: -40px;
+}
+
+.whatiscontenttitle {
+  font-family: Futuro;
+  font-size: 40px;
+  color: #012626;
+  padding-bottom: 1em;
+}
+
+.whatiscontentparagraph {
+  font-size: 20px;
+  font-weight: 300px;
+  color: #012626;
+}

@@ -1,0 +1,158 @@
+.artcontainer {
+  min-height: 100px;
+  width: 100vw;
+}
+
+.artsubcontainer {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artsubtitle {
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: 300;
+  color: #012626;
+}
+
+.arttitle {
+  font-family: Futuro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  color: #007369;
+}
+
+.artgalleryrowcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 4em;
+}
+
+.artgallerybox {
+  /* height: 17.5vw;
+  width: 17.5vw; */
+  padding: 1.5vw;
+  background-color: lightgrey;
+  border: 5px solid black;
+}
+
+.artgalleryimagecont {
+  height: 16vw;
+  width: 16vw;
+  position: relative;
+}
+.artgalleryboxtitle {
+  width: 100%;
+  font-family: Ubuntu;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  color: #012626;
+}
+
+.arttextcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.arttextleftcontainer {
+  width: 30%;
+}
+
+.arttextrightcontainer {
+  width: 60%;
+}
+
+.arttextlefttitle {
+  font-family: Futuro;
+  color: #012626;
+  font-size: 34px;
+}
+
+.arttextlefttext {
+  font-family: Ubuntu;
+  color: #012626;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 180%;
+}
+.artpercentagecontainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+}
+
+.artpercentagebox {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artpercentagetitle {
+  font-family: Futuro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.artpercentage {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 100%;
+}
+.artpercentagetext {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+
+  /* identical to box height, or 24px */
+  text-align: center;
+  text-transform: lowercase;
+
+  color: #005a5b;
+}
+
+.artistjoincontainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artistjointitle {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 175%;
+
+  /* identical to box height, or 52px */
+
+  color: #012626;
+}
+
+.artistjoinbutton {
+  padding: 32px 56px;
+  background: #02a676;
+  border-radius: 53px;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: ubuntu;
+  font-size: 24px;
+}
