@@ -5,6 +5,8 @@ import Header from "../components/header";
 import WhatIs from "../components/sections/whatis";
 import Art from "../components/sections/art";
 import ImageContainer from "../components/sections/image";
+import Guardians from "../components/sections/guardians";
+import SignUp from "../components/sections/signup";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -19,6 +21,8 @@ export default function Home() {
         <WhatIs />
         <Art />
         <ImageContainer />
+        <Guardians />
+        <SignUp/>
       </main>
 
       {/* <footer className={styles.footer}>

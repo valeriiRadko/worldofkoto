@@ -1,0 +1,95 @@
+.container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vh;
+}
+
+.subtitle {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 150%;
+
+  /* identical to box height, or 33px */
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #012626;
+}
+
+.title {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 115%;
+  /* identical to box height, or 46px */
+  letter-spacing: 0.01em;
+  text-transform: lowercase;
+
+  color: #007369;
+}
+
+.guardiansimagecontainer {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  flex-direction: row;
+  height: 60vh;
+  background-color: red;
+}
+.imagecont {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+.image {
+  position: relative;
+  height: 80vh;
+  width: 33vw;
+  object-fit: cover;
+}
+
+.textcont {
+  width: 60vw;
+  min-height: 200px;
+  margin-top: 50px;
+  display: flex;
+}
+
+.lefttextcont {
+  width: 40%;
+}
+
+.righttextcont {
+  width: 60%;
+}
+
+.texttitle {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 125%;
+
+  /* or 42px */
+  letter-spacing: 0.01em;
+  text-transform: lowercase;
+
+  color: #012626;
+}
+
+.text {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 180%;
+
+  /* or 36px */
+
+  color: #012626;
+}

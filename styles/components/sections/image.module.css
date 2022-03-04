@@ -11,9 +11,9 @@
   background-color: blue;
 }
 
-.image{
-    position:relative;
-    height:80vh;
-    width:33vw;
-    object-fit: cover;
+.image {
+  position: relative;
+  height: 80vh;
+  width: 33vw;
+  object-fit: cover;
 }
