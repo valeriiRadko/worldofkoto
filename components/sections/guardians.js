@@ -49,7 +49,9 @@ const Guardians = () => {
             left in the world
           </p>
 
-          <p className={styles.text}><i>The future depends on it.</i></p>
+          <p className={styles.text}>
+            <i>The future depends on it.</i>
+          </p>
         </div>
       </div>
     </div>

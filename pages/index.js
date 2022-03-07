@@ -7,6 +7,7 @@ import Art from "../components/sections/art";
 import ImageContainer from "../components/sections/image";
 import Guardians from "../components/sections/guardians";
 import SignUp from "../components/sections/signup";
+import NavBar from "../components/navbar";
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -17,12 +18,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+        <NavBar />
         <Header />
         <WhatIs />
         <Art />
         <ImageContainer />
         <Guardians />
-        <SignUp/>
+        <SignUp />
       </main>
 
       {/* <footer className={styles.footer}>
