@@ -38,7 +38,7 @@
   padding: 1.5vw;
   background-color: lightgrey;
   border: 5px solid black;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -178,7 +178,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:5vh;
+    margin-top: 5vh;
   }
   .arttextleftcontainer {
     width: 90vw;

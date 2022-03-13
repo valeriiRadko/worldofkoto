@@ -4,16 +4,12 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import styles from "../../styles/components/sections/art.module.css";
 
-
-
-
-
 const EmblaCarousel = () => {
-    const SLIDE_COUNT = 6;
-const slides = Array.from(Array(SLIDE_COUNT).keys());
+  const SLIDE_COUNT = 6;
+  const slides = Array.from(Array(SLIDE_COUNT).keys());
   const [viewportRef, embla] = useEmblaCarousel({
     slidesToScroll: 2,
-    skipSnaps: false
+    skipSnaps: false,
   });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
@@ -37,20 +33,19 @@ const slides = Array.from(Array(SLIDE_COUNT).keys());
       <div className="embla__viewport" ref={viewportRef}>
         <div className="embla__container">
           {slides.map((index) => (
-              <div style={{marginRight:50}} key={index}>
+            <div style={{ marginRight: 50 }} key={index}>
               <div className={styles.artgallerybox}>
-              <div className={styles.artgalleryimagecont}>
-                <Image
-                  src={"/jn.png"}
-                  alt="Art"
-                  layout="fill"
-                  objectFit="contain"
-                />  
-              </div>
-            </div>
-            <h1 className={styles.artgalleryboxtitle}>Jim Naughten</h1>
-            
+                <div className={styles.artgalleryimagecont}>
+                  <Image
+                    src={"/jn.png"}
+                    alt="Art"
+                    layout="fill"
+                    objectFit="contain"
+                  />
                 </div>
+              </div>
+              <h1 className={styles.artgalleryboxtitle}>Jim Naughten</h1>
+            </div>
           ))}
         </div>
       </div>
@@ -62,12 +57,11 @@ const slides = Array.from(Array(SLIDE_COUNT).keys());
 
 export default EmblaCarousel;
 
-
 // import React from 'react';
 // import Slider from "react-slick";
 // import NoSSR from 'react-no-ssr';
 
-// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
 // const Carousel = () => {
@@ -140,5 +134,5 @@ export default EmblaCarousel;
 //       </div>
 //     );
 //   };
- 
+
 // export default Carousel;

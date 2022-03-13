@@ -50,7 +50,7 @@ const WhatIs = () => {
             <p className={styles.whatiscontenttitle}>Play 2 earn game</p>
             <p className={styles.whatiscontentparagraph}>
               <b>Guardians of Koto</b> is the place where art pieces you own
-              will comes to life in a series of challenging 3D mini games.
+              will come to life in a series of challenging 3D mini games.
             </p>
           </div>
         </div>

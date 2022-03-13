@@ -2,16 +2,13 @@ import React from "react";
 import styles from "../../styles/components/sections/art.module.css";
 import Image from "next/image";
 import Carousel from "../carousel";
-const Art = ({isBreakPoint}) => {
+const Art = ({ isBreakPoint }) => {
   return (
     <div className={styles.artcontainer}>
       <div className={styles.artsubcontainer}>
         <h1 className={styles.artsubtitle}>PART 1: The Art</h1>
         <h1 className={styles.arttitle}>gallery of koto</h1>
-        {isBreakPoint && (
-        <Carousel />
-
-        )}
+        {isBreakPoint && <Carousel />}
         <div className={styles.artgalleryrowcontainer}>
           <div>
             <div className={styles.artgallerybox}>
@@ -101,7 +98,7 @@ const Art = ({isBreakPoint}) => {
           <div className={styles.arttextleftcontainer}>
             <h1 className={styles.arttextlefttitle}>Artist revenue share</h1>
             <p className={styles.arttextlefttext}>
-              We're designing a framework that fairly compensate artists who
+              We're designing a framework that fairly compensates artists who
               contributes to the project, every step of the way.
             </p>
           </div>

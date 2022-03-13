@@ -37,7 +37,7 @@ const useMediaQuery = (width) => {
 };
 
 export default function Home() {
-  const isBreakpoint = useMediaQuery(768)
+  const isBreakpoint = useMediaQuery(768);
 
   return (
     <div className={styles.container}>
@@ -50,7 +50,6 @@ export default function Home() {
 
         <meta name="description" content="Explore the world of Koto" />
         <link rel="icon" href="/favicon.ico" />
-
       </Head>
 
       <main className={styles.main}>
@@ -59,8 +58,8 @@ export default function Home() {
         <NavBar />
 
         <Header />
-        <WhatIs/>
-        <Art isBreakPoint={isBreakpoint}/>
+        <WhatIs />
+        <Art isBreakPoint={isBreakpoint} />
         <ImageContainer />
         <Guardians />
         <SignUp />

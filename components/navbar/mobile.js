@@ -26,7 +26,12 @@ const Mobile = () => {
   return (
     <div className={styles.container}>
       <animated.div style={containerstyle}>
-        <Hamburger color="#012626" size={30} toggled={isOpen} toggle={setOpen} />
+        <Hamburger
+          color="#012626"
+          size={30}
+          toggled={isOpen}
+          toggle={setOpen}
+        />
         <animated.div style={linkcontainer}>
           <h1 className={styles.mobilelink}>Gallery</h1>
           <h1 className={styles.mobilelink}>Art</h1>
