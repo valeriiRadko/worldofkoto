@@ -6,15 +6,15 @@
   min-width: 100vw;
   top: 0;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: space-around;
   z-index: 10;
 }
 
-.imagecontainer{
-    width:20%;
-    height:95%;
-    position:relative;
+.imagecontainer {
+  width: 20%;
+  height: 95%;
+  position: relative;
 }
 .image {
   position: relative;
@@ -23,43 +23,48 @@
   object-fit: contain;
 }
 
-.linkcontainer{
-    min-width:40vw;
-    height:80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+.linkcontainer {
+  min-width: 40vw;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
+.button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
 
-.button{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    font-family: Futuro;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 24px;
+  /* identical to box height */
 
-/* identical to box height */
-
-color: #012626;
+  color: #012626;
 }
 
-.link{
-    font-family: Futuro;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 24px;
+.link {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
 
-/* identical to box height */
+  /* identical to box height */
 
-color: #02A676;
+  color: #02a676;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    display: none;
+  }
 }

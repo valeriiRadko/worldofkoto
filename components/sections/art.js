@@ -123,7 +123,7 @@ const Art = () => {
             </div>
 
             <div className={styles.artistjoincontainer}>
-              <h1 className={styles.artistjointitle}>Artist Revenue Share</h1>
+              <h1 className={styles.artistjointitle}>Are you an artist?</h1>
               <button className={styles.artistjoinbutton}>
                 Apply to Join KOTO
               </button>

@@ -50,7 +50,9 @@ const Guardians = () => {
           </p>
 
           <p className={styles.text}>
-            <i>The future depends on it.</i>
+            <b>
+              <i>The future depends on it.</i>
+            </b>
           </p>
         </div>
       </div>

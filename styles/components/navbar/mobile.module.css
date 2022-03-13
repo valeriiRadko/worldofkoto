@@ -1,0 +1,55 @@
+.container {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100vw;
+    display: flex;
+    padding-top:10px;
+
+
+      
+  }
+
+.mobilelink {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 10px;
+}
+
+.imagecontainer {
+  position: relative;
+  width: 60vw;
+  height: 100%;
+}
+
+.image{
+    position: relative;
+    height: 100%;
+    width: 60vw;
+    object-fit: cover;
+}
+
+
+.whitepapercontainer{
+    position: relative;
+    width:20vw;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whitepaperimage{
+    position: relative;
+    height:50px;
+    width:45px;
+}
+
+@media screen and (max-width:992px){
+    .container{
+        z-index:20
+    }
+}

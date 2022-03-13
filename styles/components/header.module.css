@@ -16,3 +16,11 @@
   margin-top: 25vh;
   width: 73.5vw;
 }
+
+@media (max-width: 992px) {
+  .headertitle {
+    width: 90vw;
+    font-size: 32px;
+    font-weight: 400;
+  }
+}

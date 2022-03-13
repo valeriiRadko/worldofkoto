@@ -75,3 +75,33 @@
   font-weight: 300px;
   color: #012626;
 }
+
+@media screen and (max-width: 992px) {
+  .whatistitle {
+    display: none;
+  }
+
+  .whatiscontent {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .whatiscontentimage {
+    height: 65vw;
+    width: 65vw;
+  }
+  .whatiscontenttext {
+    width: 90vw;
+    margin-top: 1em;
+  }
+  .whatiscontentreverse {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .whatiscontenttitle {
+    font-size: 24px;
+  }
+
+  .whatiscontentparagraph {
+    font-size: 17px;
+  }
+}

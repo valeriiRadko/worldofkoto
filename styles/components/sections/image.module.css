@@ -1,8 +1,8 @@
 .imagecontainer {
   width: 100vw;
-  height: 80vh;
   position: relative;
   display: flex;
+  justify-content: center;
 }
 .imagesubcont {
   position: relative;
@@ -16,4 +16,17 @@
   height: 80vh;
   width: 33vw;
   object-fit: cover;
+}
+@media screen and (max-width: 992px) {
+  .imagesubcont {
+    width: 50vw;
+    min-width: 50vw;
+    height: 50vw;
+    background-color: green;
+  }
+  .image {
+    width: 50vw;
+    min-width: 50vw;
+    height: 50vw;
+  }
 }

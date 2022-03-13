@@ -104,6 +104,7 @@
   font-size: 64px;
   font-style: normal;
   font-weight: normal;
+  color: #005a5b;
 }
 
 .artpercentage {
@@ -155,4 +156,61 @@
   color: white;
   font-family: ubuntu;
   font-size: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .artsubtitle {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .artsubcontainer {
+    width: 100vw;
+  }
+  .arttitle {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .arttextcontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .arttextleftcontainer {
+    width: 90vw;
+  }
+  .arttextlefttitle {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+  }
+
+  .arttextlefttext {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .arttextrightcontainer {
+    width: 100vw;
+  }
+  .artpercentagetitle {
+    font-size: 39px;
+    font-weight: 400;
+  }
+  .artpercentagetext {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .artistjointitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .artistjoinbutton {
+    padding: 24px 48px 24px 38px;
+    border-radius: 53px;
+    font-size: 17px;
+    font-weight: 400;
+  }
 }
