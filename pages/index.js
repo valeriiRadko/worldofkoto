@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -12,7 +11,7 @@ import SignUp from "../components/sections/signup";
 import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
 export default function Home() {
-  const [mobile,setMobile] = React.useState(true)
+  const [mobile, setMobile] = React.useState(true);
 
   return (
     <div className={styles.container}>
@@ -25,13 +24,23 @@ export default function Home() {
 
         <meta name="description" content="Explore the world of Koto" />
         <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          charset="UTF-8"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+        />
       </Head>
 
       <main className={styles.main}>
-      <Mobile/>
-      
-      <NavBar/>
-      
+        <Mobile />
+
+        <NavBar />
 
         <Header />
         <WhatIs />
@@ -41,7 +50,7 @@ export default function Home() {
         <SignUp />
       </main>
 
-      {/* <footer className={styles.footer}>
+      <footer className={styles.footer}>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
@@ -52,7 +61,7 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
-      </footer> */}
+      </footer>
     </div>
   );
 }

@@ -8,7 +8,6 @@
   position: relative;
   width: 33vw;
   height: 100%;
-  background-color: blue;
 }
 
 .image {
@@ -22,7 +21,6 @@
     width: 50vw;
     min-width: 50vw;
     height: 50vw;
-    background-color: green;
   }
   .image {
     width: 50vw;

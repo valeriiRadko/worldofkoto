@@ -1,7 +1,6 @@
 .signupcontainer {
   width: 100vw;
   height: 60vh;
-  background-color: red;
   background-image: url("../../../public/signup.png");
   background-size: cover;
 }

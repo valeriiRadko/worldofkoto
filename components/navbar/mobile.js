@@ -8,7 +8,7 @@ const Mobile = () => {
   const [isOpen, setOpen] = React.useState(false);
   const containerstyle = useSpring({
     height: isOpen ? "100vh" : "10vh",
-    width: isOpen ? "100vw" : "20vw",
+    width: isOpen ? "100vw" : "22.5vw",
     backgroundColor: isOpen ? "white" : "transparent",
     borderBottomRightRadius: isOpen ? "0px" : "100px",
   });
@@ -21,12 +21,12 @@ const Mobile = () => {
   const headercontainer = useSpring({
     width: isOpen ? "0vh" : "80vw",
     height: "10vh",
-    display:'flex',
+    display: "flex",
   });
   return (
     <div className={styles.container}>
       <animated.div style={containerstyle}>
-        <Hamburger color="green" size={30} toggled={isOpen} toggle={setOpen} />
+        <Hamburger color="#012626" size={30} toggled={isOpen} toggle={setOpen} />
         <animated.div style={linkcontainer}>
           <h1 className={styles.mobilelink}>Gallery</h1>
           <h1 className={styles.mobilelink}>Art</h1>
@@ -39,7 +39,7 @@ const Mobile = () => {
       </animated.div>
       <animated.div style={headercontainer}>
         <div className={styles.imagecontainer}>
-        <Image
+          <Image
             src="/logo.png"
             alt="Art"
             layout="fill"
@@ -47,16 +47,14 @@ const Mobile = () => {
           />
         </div>
         <div className={styles.whitepapercontainer}>
-            <div className={styles.whitepaperimage}>
-        <Image
-            src="/Union.svg"
-            alt="Art"
-            layout="fill"
-            // className={styles.whitepaperimage}
-          />
-          
-</div>
-
+          <div className={styles.whitepaperimage}>
+            <Image
+              src="/Union.svg"
+              alt="Art"
+              layout="fill"
+              // className={styles.whitepaperimage}
+            />
+          </div>
         </div>
       </animated.div>
     </div>

@@ -38,6 +38,9 @@
   padding: 1.5vw;
   background-color: lightgrey;
   border: 5px solid black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .artgalleryimagecont {
@@ -212,5 +215,16 @@
     border-radius: 53px;
     font-size: 17px;
     font-weight: 400;
+  }
+
+  .artgalleryrowcontainer {
+    display: none;
+    margin-top: 0px;
+  }
+
+  .artgalleryimagecont {
+    height: 30vw;
+    width: 30vw;
+    position: relative;
   }
 }

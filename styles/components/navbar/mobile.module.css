@@ -1,14 +1,11 @@
 .container {
-    position: fixed;
-    top: 0;
-    z-index: -1;
-    width: 100vw;
-    display: flex;
-    padding-top:10px;
-
-
-      
-  }
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  display: flex;
+  padding-top: 10px;
+}
 
 .mobilelink {
   font-family: Futuro;
@@ -21,35 +18,34 @@
 
 .imagecontainer {
   position: relative;
-  width: 60vw;
+  width: 55vw;
   height: 100%;
 }
 
-.image{
-    position: relative;
-    height: 100%;
-    width: 60vw;
-    object-fit: cover;
+.image {
+  position: relative;
+  height: 100%;
+  width: 22.5vw;
+  object-fit: cover;
 }
 
-
-.whitepapercontainer{
-    position: relative;
-    width:20vw;
-    height:100%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.whitepapercontainer {
+  position: relative;
+  width: 22.5vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.whitepaperimage{
-    position: relative;
-    height:50px;
-    width:45px;
+.whitepaperimage {
+  position: relative;
+  height: 50px;
+  width: 45px;
 }
 
-@media screen and (max-width:992px){
-    .container{
-        z-index:20
-    }
+@media screen and (max-width: 992px) {
+  .container {
+    z-index: 20;
+  }
 }
