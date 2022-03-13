@@ -4,6 +4,10 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import styles from "../../styles/components/sections/art.module.css";
 
+
+
+
+
 const EmblaCarousel = () => {
     const SLIDE_COUNT = 6;
 const slides = Array.from(Array(SLIDE_COUNT).keys());
@@ -41,7 +45,7 @@ const slides = Array.from(Array(SLIDE_COUNT).keys());
                   alt="Art"
                   layout="fill"
                   objectFit="contain"
-                />
+                />  
               </div>
             </div>
             <h1 className={styles.artgalleryboxtitle}>Jim Naughten</h1>

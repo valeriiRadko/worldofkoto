@@ -2,14 +2,16 @@ import React from "react";
 import styles from "../../styles/components/sections/art.module.css";
 import Image from "next/image";
 import Carousel from "../carousel";
-const Art = () => {
+const Art = ({isBreakPoint}) => {
   return (
     <div className={styles.artcontainer}>
       <div className={styles.artsubcontainer}>
         <h1 className={styles.artsubtitle}>PART 1: The Art</h1>
         <h1 className={styles.arttitle}>gallery of koto</h1>
-
+        {isBreakPoint && (
         <Carousel />
+
+        )}
         <div className={styles.artgalleryrowcontainer}>
           <div>
             <div className={styles.artgallerybox}>

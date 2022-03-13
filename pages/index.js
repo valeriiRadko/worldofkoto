@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
@@ -10,8 +10,34 @@ import Guardians from "../components/sections/guardians";
 import SignUp from "../components/sections/signup";
 import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
+const useMediaQuery = (width) => {
+  const [targetReached, setTargetReached] = useState(false);
+
+  const updateTarget = useCallback((e) => {
+    if (e.matches) {
+      setTargetReached(true);
+    } else {
+      setTargetReached(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    const media = window.matchMedia(`(max-width: ${width}px)`);
+    media.addListener(updateTarget);
+
+    // Check on mount (callback is not called until a change occurs)
+    if (media.matches) {
+      setTargetReached(true);
+    }
+
+    return () => media.removeListener(updateTarget);
+  }, []);
+
+  return targetReached;
+};
+
 export default function Home() {
-  const [mobile, setMobile] = React.useState(true);
+  const isBreakpoint = useMediaQuery(768)
 
   return (
     <div className={styles.container}>
@@ -24,17 +50,7 @@ export default function Home() {
 
         <meta name="description" content="Explore the world of Koto" />
         <link rel="icon" href="/favicon.ico" />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          charset="UTF-8"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-        />
+
       </Head>
 
       <main className={styles.main}>
@@ -43,8 +59,8 @@ export default function Home() {
         <NavBar />
 
         <Header />
-        <WhatIs />
-        <Art />
+        <WhatIs/>
+        <Art isBreakPoint={isBreakpoint}/>
         <ImageContainer />
         <Guardians />
         <SignUp />
