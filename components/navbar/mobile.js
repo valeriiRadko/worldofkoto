@@ -3,6 +3,7 @@ import styles from "../../styles/components/navbar/mobile.module.css";
 import { animated, useSpring } from "react-spring";
 import { Fade as Hamburger } from "hamburger-react";
 import Image from "next/image";
+import { scroller } from "react-scroll";
 
 const Mobile = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -23,6 +24,14 @@ const Mobile = () => {
     height: "10vh",
     display: "flex",
   });
+
+  const scroll = (element) => {
+    scroller.scrollTo(element, {
+      duration: 1000,
+      delay: 100,
+      smooth: true,
+    });
+  };
   return (
     <div className={styles.container}>
       <animated.div style={containerstyle}>
@@ -33,10 +42,18 @@ const Mobile = () => {
           toggle={setOpen}
         />
         <animated.div style={linkcontainer}>
-          <h1 className={styles.mobilelink}>Gallery</h1>
-          <h1 className={styles.mobilelink}>Art</h1>
-          <h1 className={styles.mobilelink}>Game</h1>
-          <h1 className={styles.mobilelink}>Sign Up</h1>
+          <h1 className={styles.mobilelink} onClick={() => scroll("gallery")}>
+            Gallery
+          </h1>
+          <h1 className={styles.mobilelink} onClick={() => scroll("gallery")}>
+            Art
+          </h1>
+          <h1 className={styles.mobilelink} onClick={() => scroll("game")}>
+            Game
+          </h1>
+          <h1 className={styles.mobilelink} onClick={() => scroll("signup")}>
+            Sign Up
+          </h1>
           <h1 className={styles.mobilelink}>Whitepaper</h1>
         </animated.div>
 

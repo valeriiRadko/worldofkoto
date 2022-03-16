@@ -13,8 +13,7 @@ const SignUp = () => {
         </div>
         <div className={styles.emailcontainer}>
           <div className={styles.emailinputcontainer}>
-            <input placeholder="Enter your email" className={styles.input}/>
-
+            <input placeholder="Enter your email" className={styles.input} />
           </div>
         </div>
       </div>

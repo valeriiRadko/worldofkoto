@@ -62,27 +62,26 @@
 
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 100px;
-  width:50%;
-  margin-left:20%
+  width: 50%;
+  margin-left: 20%;
 }
-.input{
-  border:none;
-  background-image:none;
-  background-color:transparent;
+.input {
+  border: none;
+  background-image: none;
+  background-color: transparent;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  min-width:80%;
-  height:100%;
-  padding-top:15px;
-  padding-bottom:15px;
-  padding-left:24px;
+  min-width: 80%;
+  height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 24px;
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  outline:none;
-  color:black;
+  outline: none;
+  color: black;
   font-weight: 400;
-font-size: 20px;
-line-height: 180%;
-  
+  font-size: 20px;
+  line-height: 180%;
 }

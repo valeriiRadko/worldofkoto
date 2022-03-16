@@ -10,6 +10,7 @@ import Guardians from "../components/sections/guardians";
 import SignUp from "../components/sections/signup";
 import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
+import { Element } from "react-scroll";
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
 
@@ -59,10 +60,16 @@ export default function Home() {
 
         <Header />
         <WhatIs />
-        <Art isBreakPoint={isBreakpoint} />
+        <Element name="gallery">
+          <Art isBreakPoint={isBreakpoint} />
+        </Element>
         <ImageContainer />
-        <Guardians />
-        <SignUp />
+        <Element name="game">
+          <Guardians />
+        </Element>
+        <Element name="signup">
+          <SignUp />
+        </Element>
       </main>
 
       <footer className={styles.footer}>
