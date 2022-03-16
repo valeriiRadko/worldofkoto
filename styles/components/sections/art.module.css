@@ -86,7 +86,8 @@
   color: #012626;
   font-size: 20px;
   font-weight: 300;
-  line-height: 180%;
+  line-height:1.6em;
+
 }
 .artpercentagecontainer {
   display: flex;
