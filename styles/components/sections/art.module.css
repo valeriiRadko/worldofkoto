@@ -41,6 +41,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 14px 20px -6px rgb(207 207 207);
 }
 
 .artgalleryimagecont {
@@ -163,6 +164,11 @@
 }
 .artistjoinbutton:hover {
   background: #007369;
+}
+.line{
+  width:100px;
+  height:100px;
+  background-color: blue;
 }
 @media screen and (max-width: 992px) {
   .artsubtitle {

@@ -96,9 +96,11 @@ const Art = ({ isBreakPoint }) => {
                   20<span className={styles.artpercentage}>%</span>
                 </h1>
                 <h1 className={styles.artpercentagetext}>Bounty Pool</h1>
-              </div>
+              </div>  
             </div>
-
+            <div style={{position:'relative',width:'90%',marginLeft:'5%',height:50,display:'flex'}}>
+            <Image src="/line.png" alt="line" layout="fill"   objectFit="contain"/>
+            </div>
             <div className={styles.artistjoincontainer}>
               <h1 className={styles.artistjointitle}>Are you an artist?</h1>
               <button className={styles.artistjoinbutton}>
