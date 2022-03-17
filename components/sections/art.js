@@ -6,7 +6,7 @@ const Art = ({ isBreakPoint }) => {
   return (
     <div className={styles.artcontainer}>
       <div className={styles.artsubcontainer}>
-        <h1 className={styles.artsubtitle}>PART 1: The Art</h1>
+        <h1 className={styles.artsubtitle}>PART 1: THE ART</h1>
         <h1 className={styles.arttitle}>gallery of koto</h1>
         {isBreakPoint && <Carousel />}
         <div className={styles.artgalleryrowcontainer}>
@@ -27,71 +27,46 @@ const Art = ({ isBreakPoint }) => {
             <div className={styles.artgallerybox}>
               <div className={styles.artgalleryimagecont}>
                 <Image
-                  src={"/kaws.png"}
+                  src={"/confidential1.png"}
                   alt="Art"
                   layout="fill"
                   objectFit="contain"
                 />
               </div>
             </div>
-            <h1 className={styles.artgalleryboxtitle}>KAWS</h1>
+            <h1 className={styles.artgalleryboxtitle}>Confidential</h1>
           </div>
           <div>
             <div className={styles.artgallerybox}>
-              <div
-                className={styles.artgalleryimagecont}
-                style={{ backgroundColor: "#f6eccf" }}
-              ></div>
+              <div className={styles.artgalleryimagecont}>
+                <Image
+                  src={"/confidential2.png"}
+                  alt="Art"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             </div>
-            <h1 className={styles.artgalleryboxtitle}>BANKSY</h1>
+            <h1 className={styles.artgalleryboxtitle}>Confidential</h1>
           </div>
           <div>
             <div className={styles.artgallerybox}>
-              <div
-                className={styles.artgalleryimagecont}
-                style={{ backgroundColor: "#ccacac" }}
-              ></div>
+              <div className={styles.artgalleryimagecont}>
+                <Image
+                  src={"/confidential3.png"}
+                  alt="Art"
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             </div>
-            <h1 className={styles.artgalleryboxtitle}>Pablo Picasso</h1>
+            <h1 className={styles.artgalleryboxtitle}>Condifential</h1>
           </div>
-        </div>
-        <div className={styles.artgalleryrowcontainer}>
-          <div>
-            <div className={styles.artgallerybox}>
-              <div
-                className={styles.artgalleryimagecont}
-                style={{ backgroundColor: "#cdf3bc" }}
-              ></div>
-            </div>
-            <h1 className={styles.artgalleryboxtitle}>Shepard Fairy</h1>
-          </div>
-          <div>
-            <div className={styles.artgallerybox}>
-              <div
-                className={styles.artgalleryimagecont}
-                style={{ backgroundColor: "#dae4fd" }}
-              ></div>
-            </div>
-            <h1 className={styles.artgalleryboxtitle}>David Carson</h1>
-          </div>
-          <div>
-            <div className={styles.artgallerybox}>
-              <div
-                className={styles.artgalleryimagecont}
-                style={{ backgroundColor: "#ddcce5" }}
-              ></div>
-            </div>
-            <h1 className={styles.artgalleryboxtitle}>Peter Max</h1>
-          </div>
-          <div>
-            <div className={styles.artgallerybox}>
-              <div
-                className={styles.artgalleryimagecont}
-                style={{ backgroundColor: "#acccca" }}
-              ></div>
-            </div>
-            <h1 className={styles.artgalleryboxtitle}>Tom Everhart</h1>
-          </div>
+
+
+
+
+
         </div>
 
         <div className={styles.arttextcontainer}>

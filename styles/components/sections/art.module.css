@@ -4,7 +4,7 @@
 }
 
 .artsubcontainer {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -86,8 +86,7 @@
   color: #012626;
   font-size: 20px;
   font-weight: 300;
-  line-height:1.6em;
-
+  line-height: 1.6em;
 }
 .artpercentagecontainer {
   display: flex;
@@ -109,6 +108,7 @@
   font-style: normal;
   font-weight: normal;
   color: #005a5b;
+  margin-bottom: 0px !important;
 }
 
 .artpercentage {
@@ -158,10 +158,12 @@
   outline: none;
   border: none;
   color: white;
-  font-family: ubuntu;
+  font-family: Ubuntu !important;
   font-size: 24px;
 }
-
+.artistjoinbutton:hover {
+  background: #007369;
+}
 @media screen and (max-width: 992px) {
   .artsubtitle {
     font-size: 18px;
@@ -182,7 +184,7 @@
     margin-top: 5vh;
   }
   .arttextleftcontainer {
-    width: 90vw;
+    width: 100vw;
   }
   .arttextlefttitle {
     font-size: 24px;

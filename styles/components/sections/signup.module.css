@@ -87,12 +87,12 @@
   line-height: 180%;
 }
 
-@media screen and (max-width:992px){
-  .blur{
-    width:90vw;
+@media screen and (max-width: 992px) {
+  .blur {
+    width: 90vw;
   }
-  .emailinputcontainer{
-    width:90%;
-    margin-left:5%;
+  .emailinputcontainer {
+    width: 90%;
+    margin-left: 5%;
   }
 }

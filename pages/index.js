@@ -51,6 +51,8 @@ export default function Home() {
 
         <meta name="description" content="Explore the world of Koto" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+        
       </Head>
 
       <main className={styles.main}>
@@ -73,7 +75,7 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
+        {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -82,7 +84,7 @@ export default function Home() {
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
-        </a>
+        </a> */}
       </footer>
     </div>
   );

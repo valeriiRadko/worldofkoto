@@ -3,9 +3,15 @@ import useEmblaCarousel from "embla-carousel-react";
 // import { mediaByIndex } from "../media";
 import Image from "next/image";
 import styles from "../../styles/components/sections/art.module.css";
+const slidecontent = [
+  {title:"Jim Naughten",image:"/jn.png"},
+  {title:"Confidential",image:"/confidential1.png"},
+  {title:"Confidential",image:"/confidential2.png"},
+  {title:"Confidential",image:"/confidential3.png"},
+]
 
 const EmblaCarousel = () => {
-  const SLIDE_COUNT = 6;
+  const SLIDE_COUNT = 4;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
   const [viewportRef, embla] = useEmblaCarousel({
     slidesToScroll: 2,
@@ -37,14 +43,14 @@ const EmblaCarousel = () => {
               <div className={styles.artgallerybox}>
                 <div className={styles.artgalleryimagecont}>
                   <Image
-                    src={"/jn.png"}
+                    src={slidecontent[index].image}
                     alt="Art"
                     layout="fill"
                     objectFit="contain"
                   />
                 </div>
               </div>
-              <h1 className={styles.artgalleryboxtitle}>Jim Naughten</h1>
+              <h1 className={styles.artgalleryboxtitle}>{slidecontent[index].title}</h1>
             </div>
           ))}
         </div>

@@ -4,6 +4,7 @@ import { animated, useSpring } from "react-spring";
 import { Fade as Hamburger } from "hamburger-react";
 import Image from "next/image";
 import { scroller } from "react-scroll";
+import Link from "next/link";
 
 const Mobile = () => {
   const [isOpen, setOpen] = React.useState(false);
@@ -54,7 +55,9 @@ const Mobile = () => {
           <h1 className={styles.mobilelink} onClick={() => scroll("signup")}>
             Sign Up
           </h1>
-          <h1 className={styles.mobilelink}>Whitepaper</h1>
+          <Link replace href="https://whitepaper.metasandmortals.com">
+            <a className={styles.mobilelink}>Whitepaper</a>
+          </Link>
         </animated.div>
 
         <div></div>

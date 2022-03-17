@@ -38,7 +38,9 @@ const NavBar = () => {
         </button>
 
         <Link replace href="https://whitepaper.metasandmortals.com">
-          <a className={styles.link}>Whitepaper</a>
+          <a target="_blank" className={styles.link}>
+            Whitepaper
+          </a>
         </Link>
       </div>
     </div>
