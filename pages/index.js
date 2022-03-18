@@ -11,6 +11,8 @@ import SignUp from "../components/sections/signup";
 import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
 import { Element } from "react-scroll";
+import { ParallaxProvider } from "react-scroll-parallax";
+
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
 
@@ -41,41 +43,45 @@ export default function Home() {
   const isBreakpoint = useMediaQuery(768);
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>World of Koto</title>
-        <meta
-          name="viewport"
-          content="width=device-width,minimum-scale=1,initial-scale=1"
-        />
+    <ParallaxProvider>
+      <div className={styles.container}>
+        <Head>
+          <title>World of Koto</title>
+          <meta
+            name="viewport"
+            content="width=device-width,minimum-scale=1,initial-scale=1"
+          />
 
-        <meta name="description" content="Explore the world of Koto" />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
-        
-      </Head>
+          <meta name="description" content="Explore the world of Koto" />
+          <link rel="icon" href="/favicon.ico" />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="//fonts.googleapis.com/css?family=Ubuntu"
+          />
+        </Head>
 
-      <main className={styles.main}>
-        <Mobile />
+        <main className={styles.main}>
+          <Mobile />
 
-        <NavBar />
+          <NavBar />
 
-        <Header />
-        <WhatIs />
-        <Element name="gallery">
-          <Art isBreakPoint={isBreakpoint} />
-        </Element>
-        <ImageContainer />
-        <Element name="game">
-          <Guardians />
-        </Element>
-        <Element name="signup">
-          <SignUp />
-        </Element>
-      </main>
+          <Header />
+          <WhatIs />
+          <Element name="gallery">
+            <Art isBreakPoint={isBreakpoint} />
+          </Element>
+          <ImageContainer />
+          <Element name="game">
+            <Guardians />
+          </Element>
+          <Element name="signup">
+            <SignUp />
+          </Element>
+        </main>
 
-      <footer className={styles.footer}>
-        {/* <a
+        <footer className={styles.footer}>
+          {/* <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
           rel="noopener noreferrer"
@@ -85,7 +91,8 @@ export default function Home() {
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a> */}
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </ParallaxProvider>
   );
 }

@@ -165,9 +165,9 @@
 .artistjoinbutton:hover {
   background: #007369;
 }
-.line{
-  width:100px;
-  height:100px;
+.line {
+  width: 100px;
+  height: 100px;
   background-color: blue;
 }
 @media screen and (max-width: 992px) {

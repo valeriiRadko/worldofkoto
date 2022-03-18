@@ -4,11 +4,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import styles from "../../styles/components/sections/art.module.css";
 const slidecontent = [
-  {title:"Jim Naughten",image:"/jn.png"},
-  {title:"Confidential",image:"/confidential1.png"},
-  {title:"Confidential",image:"/confidential2.png"},
-  {title:"Confidential",image:"/confidential3.png"},
-]
+  { title: "Jim Naughten", image: "/jn.png" },
+  { title: "Confidential", image: "/confidential1.png" },
+  { title: "Confidential", image: "/confidential2.png" },
+  { title: "Confidential", image: "/confidential3.png" },
+];
 
 const EmblaCarousel = () => {
   const SLIDE_COUNT = 4;
@@ -50,7 +50,9 @@ const EmblaCarousel = () => {
                   />
                 </div>
               </div>
-              <h1 className={styles.artgalleryboxtitle}>{slidecontent[index].title}</h1>
+              <h1 className={styles.artgalleryboxtitle}>
+                {slidecontent[index].title}
+              </h1>
             </div>
           ))}
         </div>

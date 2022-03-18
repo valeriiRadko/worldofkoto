@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/components/sections/whatis.module.css";
+import { Parallax } from "react-scroll-parallax";
 const WhatIs = () => {
   return (
     <div className={styles.whatiscontainer}>
@@ -14,6 +15,9 @@ const WhatIs = () => {
               layout="fill"
               objectFit="contain"
             />
+            <Parallax speed={1} startScroll={1000} translateX={200}>
+              <div className={styles.whatiscontentblur} />
+            </Parallax>
           </div>
         </div>
 
@@ -43,6 +47,9 @@ const WhatIs = () => {
                 layout="fill"
                 objectFit="contain"
               />
+              <Parallax speed={20}>
+                <div className={styles.whatiscontentblur} />
+              </Parallax>
             </div>
           </div>
 

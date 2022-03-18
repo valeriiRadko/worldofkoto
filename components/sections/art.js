@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../../styles/components/sections/art.module.css";
 import Image from "next/image";
 import Carousel from "../carousel";
+import Link from "next/link";
 const Art = ({ isBreakPoint }) => {
   return (
     <div className={styles.artcontainer}>
@@ -62,11 +63,6 @@ const Art = ({ isBreakPoint }) => {
             </div>
             <h1 className={styles.artgalleryboxtitle}>Condifential</h1>
           </div>
-
-
-
-
-
         </div>
 
         <div className={styles.arttextcontainer}>
@@ -96,16 +92,29 @@ const Art = ({ isBreakPoint }) => {
                   20<span className={styles.artpercentage}>%</span>
                 </h1>
                 <h1 className={styles.artpercentagetext}>Bounty Pool</h1>
-              </div>  
+              </div>
             </div>
-            <div style={{position:'relative',width:'90%',marginLeft:'5%',height:50,display:'flex'}}>
-            <Image src="/line.png" alt="line" layout="fill"   objectFit="contain"/>
+            <div
+              style={{
+                position: "relative",
+                width: "90%",
+                marginLeft: "5%",
+                height: 50,
+                display: "flex",
+              }}
+            >
+              <Image
+                src="/line.png"
+                alt="line"
+                layout="fill"
+                objectFit="contain"
+              />
             </div>
             <div className={styles.artistjoincontainer}>
               <h1 className={styles.artistjointitle}>Are you an artist?</h1>
-              <button className={styles.artistjoinbutton}>
-                Apply to Join KOTO
-              </button>
+              <Link  href="https://docs.google.com/forms/d/e/1FAIpQLSeiv-g8iBu-yjfJDELQMYRyUCtDti0rUA_YfeXFF7tlgufoJw/viewform">
+                <a className={styles.artistjoinbutton} target="_blank">Apply to Join KOTO</a>
+              </Link>
             </div>
           </div>
         </div>
