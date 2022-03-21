@@ -11,7 +11,7 @@ const Art = ({ isBreakPoint }) => {
         <h1 className={styles.arttitle}>gallery of koto</h1>
         {isBreakPoint && <Carousel />}
         <div className={styles.artgalleryrowcontainer}>
-          <div>
+          {/* <div>
             <div className={styles.artgallerybox}>
               <div className={styles.artgalleryimagecont}>
                 <Image
@@ -23,7 +23,7 @@ const Art = ({ isBreakPoint }) => {
               </div>
             </div>
             <h1 className={styles.artgalleryboxtitle}>Jim Naughten</h1>
-          </div>
+          </div> */}
           <div>
             <div className={styles.artgallerybox}>
               <div className={styles.artgalleryimagecont}>
