@@ -12,6 +12,7 @@ import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
 import { Element } from "react-scroll";
 import { ParallaxProvider } from "react-scroll-parallax";
+import PopUp from "../components/popup";
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
@@ -41,7 +42,15 @@ const useMediaQuery = (width) => {
 
 export default function Home() {
   const isBreakpoint = useMediaQuery(768);
+  const [showPopUp, setShowPopUp] = useState(false);
 
+  useEffect(() => {
+    if (showPopUp === false) {
+      setTimeout(() => {
+        setShowPopUp(true);
+      }, 5000);
+    }
+  }, [showPopUp]);
   return (
     <ParallaxProvider>
       <div className={styles.container}>
@@ -62,6 +71,7 @@ export default function Home() {
         </Head>
 
         <main className={styles.main}>
+          <PopUp open={showPopUp} setOpen={setShowPopUp} />
           <Mobile />
 
           <NavBar />

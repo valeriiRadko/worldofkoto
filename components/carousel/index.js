@@ -4,14 +4,13 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import styles from "../../styles/components/sections/art.module.css";
 const slidecontent = [
-  // { title: "Jim Naughten", image: "/jn.png" },
   { title: "Confidential", image: "/confidential1.png" },
   { title: "Confidential", image: "/confidential2.png" },
   { title: "Confidential", image: "/confidential3.png" },
 ];
 
 const EmblaCarousel = () => {
-  const SLIDE_COUNT = 4;
+  const SLIDE_COUNT = 3;
   const slides = Array.from(Array(SLIDE_COUNT).keys());
   const [viewportRef, embla] = useEmblaCarousel({
     slidesToScroll: 2,

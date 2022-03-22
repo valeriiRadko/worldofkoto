@@ -112,8 +112,10 @@ const Art = ({ isBreakPoint }) => {
             </div>
             <div className={styles.artistjoincontainer}>
               <h1 className={styles.artistjointitle}>Are you an artist?</h1>
-              <Link  href="https://docs.google.com/forms/d/e/1FAIpQLSeiv-g8iBu-yjfJDELQMYRyUCtDti0rUA_YfeXFF7tlgufoJw/viewform">
-                <a className={styles.artistjoinbutton} target="_blank">Apply to Join KOTO</a>
+              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSeiv-g8iBu-yjfJDELQMYRyUCtDti0rUA_YfeXFF7tlgufoJw/viewform">
+                <a className={styles.artistjoinbutton} target="_blank">
+                  Apply to Join KOTO
+                </a>
               </Link>
             </div>
           </div>
