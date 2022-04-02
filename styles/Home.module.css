@@ -27,6 +27,27 @@
   align-items: center;
 }
 
+.footersubcontainer {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerlink {
+  font-family: "Ubuntu";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+}
 .footer a {
   display: flex;
   justify-content: center;
@@ -39,6 +60,16 @@
   text-decoration: none;
 }
 
+.termsandconditions {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 20px;
+  /* identical to box height */
+
+  text-align: center;
+}
 .title a:hover,
 .title a:focus,
 .title a:active {

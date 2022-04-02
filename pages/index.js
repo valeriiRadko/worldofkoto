@@ -44,13 +44,13 @@ export default function Home() {
   const isBreakpoint = useMediaQuery(768);
   const [showPopUp, setShowPopUp] = useState(false);
 
-  useEffect(() => {
-    if (showPopUp === false) {
-      setTimeout(() => {
-        setShowPopUp(true);
-      }, 5000);
-    }
-  }, [showPopUp]);
+  useEffect(() => {}, [showPopUp]);
+  if (showPopUp === false) {
+    setTimeout(() => {
+      setShowPopUp(true);
+    }, 5000);
+  }
+
   return (
     <ParallaxProvider>
       <div className={styles.container}>
@@ -71,7 +71,7 @@ export default function Home() {
         </Head>
 
         <main className={styles.main}>
-          <PopUp open={showPopUp} setOpen={setShowPopUp} />
+          {/* <PopUp open={showPopUp} setOpen={setShowPopUp} /> */}
           <Mobile />
 
           <NavBar />
@@ -91,16 +91,36 @@ export default function Home() {
         </main>
 
         <footer className={styles.footer}>
-          {/* <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <span className={styles.footersubcontainer}>
+            <p className={styles.termsandconditions}>
+              ®Copyright 2022. Metas & Mortals. All rights reserved
+            </p>
+            <span
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <a
+                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.footerlink}
+              >
+                Privacy
+              </a>
+              •
+              <a
+                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.footerlink}
+              >
+                Terms & Conditions
+              </a>
+            </span>
           </span>
-        </a> */}
         </footer>
       </div>
     </ParallaxProvider>

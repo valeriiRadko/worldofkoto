@@ -6,7 +6,7 @@ const Guardians = () => {
     <div className={styles.container}>
       <h1 className={styles.subtitle}>PART 2: the Game</h1>
       <h1 className={styles.title}>Guardians of Koto</h1>
-      <div className={styles.guardiansimagecontainer}>
+      {/* <div className={styles.guardiansimagecontainer}>
         <div className={styles.imagecont}>
           <Image
             src="/l1.png"
@@ -23,7 +23,7 @@ const Guardians = () => {
             className={styles.image}
           />
         </div>
-      </div>
+      </div> */}
 
       <div className={styles.textcont}>
         <div className={styles.lefttextcont}>

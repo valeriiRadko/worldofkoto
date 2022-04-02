@@ -55,7 +55,7 @@ const Mobile = () => {
           <h1 className={styles.mobilelink} onClick={() => scroll("signup")}>
             Sign Up
           </h1>
-          <Link replace href="https://whitepaper.metasandmortals.com">
+          <Link replace href="https://whitepaper.worldofkoto.com">
             <a className={styles.mobilelink}>Whitepaper</a>
           </Link>
         </animated.div>

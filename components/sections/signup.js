@@ -1,7 +1,28 @@
 import React from "react";
 import styles from "../../styles/components/sections/signup.module.css";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
+const url =
+  "https://themetaversed.us14.list-manage.com/subscribe/post?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4";
 
 const SignUp = () => {
+  const [email, setEmail] = React.useState("");
+  const [signedup, setSignedup] = React.useState(false);
+  const onClick = async () => {
+    try {
+      let data = await fetch(
+        `https://cors-anywhere.herokuapp.com/https://themetaversed.us14.list-manage.com/subscribe/post-json?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4&EMAIL=${email}`
+      );
+      console.log(data);
+      data = await data.json();
+      console.log(data);
+      setSignedup(true);
+    } catch (e) {
+      console.log(e);
+    }
+  };
   return (
     <div className={styles.signupcontainer}>
       <div className={styles.blur}>
@@ -13,7 +34,15 @@ const SignUp = () => {
         </div>
         <div className={styles.emailcontainer}>
           <div className={styles.emailinputcontainer}>
-            <input placeholder="Enter your email" className={styles.input} />
+            <input
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className={styles.input}
+            />{" "}
+            <span className={styles.icon} onClick={onClick}>
+            <Image src="/Send.svg" alt="image" height={30} width={30} />
+          </span>
           </div>
         </div>
       </div>

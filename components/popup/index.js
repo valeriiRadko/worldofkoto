@@ -15,9 +15,9 @@ const PopUp = ({ open, setOpen }) => {
         onClick={() => {
           setOpen(false);
         }}
-        style={{ width:50,height:50,display:'flex' }}
+        style={{ width: 50, height: 50, display: "flex" }}
       >
-        <FontAwesomeIcon icon={faClose} color="black"  />
+        <FontAwesomeIcon icon={faClose} color="black" />
       </div>
 
       <h1 style={{ fontFamily: "Ubuntu" }}>Join the whitelist</h1>
