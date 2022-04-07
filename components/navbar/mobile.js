@@ -13,6 +13,7 @@ const Mobile = () => {
     width: isOpen ? "100vw" : "22.5vw",
     backgroundColor: isOpen ? "white" : "transparent",
     borderBottomRightRadius: isOpen ? "0px" : "100px",
+    marginTop:10
   });
 
   const linkcontainer = useSpring({
