@@ -13,7 +13,7 @@ const SignUp = () => {
   const onClick = async () => {
     try {
       let data = await fetch(
-        `https://cors-anywhere.herokuapp.com/https://themetaversed.us14.list-manage.com/subscribe/post-json?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4&EMAIL=${email}`
+        `https://cors-anywhere-koto.herokuapp.com/https://themetaversed.us14.list-manage.com/subscribe/post-json?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4&EMAIL=${email}`
       );
       console.log(data);
       data = await data.json();
@@ -34,12 +34,26 @@ const SignUp = () => {
         </div>
         <div className={styles.emailcontainer}>
           <div className={styles.emailinputcontainer}>
+            {signedup?
+          <>
+          <input
+            placeholder="Enter your email"
+            value={"Thanks for Signing Up!"}
+            style={{color:'#007369'}}
+            // onChange={(e) => setEmail(e.target.value)}
+            className={styles.input}
+          />{" "}
+          </>            
+          :
+          <>
             <input
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className={styles.input}
             />{" "}
+            </>
+          }
             <span className={styles.icon} onClick={onClick}>
             <Image src="/Send.svg" alt="image" height={30} width={30} />
           </span>
