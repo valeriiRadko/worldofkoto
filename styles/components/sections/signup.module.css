@@ -10,7 +10,8 @@
 }
 
 .blur {
-  height: 30vh;
+  max-height: 30vh;
+  height:300px;
   width: 50vw;
   background-color: rgba(71, 7, 53, 0.2);
   background-blend-mode: multiply;
@@ -27,11 +28,12 @@
 }
 
 .titlecontainer {
-  min-height: 27vh;
+  min-height: 40%;
 }
 
 .emailcontainer {
-  min-height: 6vh;
+  min-height: 54px;
+  min-width:33vw;
 }
 .title {
   font-family: Futuro;
