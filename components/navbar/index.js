@@ -38,7 +38,7 @@ const NavBar = () => {
           Game
         </button>
 
-        <Link replace href="https://whitepaper.worldofkoto.com">
+        <Link replace href="/">
           <a target="_blank" className={styles.link}>
             Whitepaper
           </a>
