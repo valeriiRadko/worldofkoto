@@ -1,0 +1,240 @@
+.artcontainer {
+  min-height: 100px;
+  width: 100vw;
+}
+
+.artsubcontainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artsubtitle {
+  font-family: Ubuntu;
+  font-size: 22px;
+  font-weight: 300;
+  color: #012626;
+}
+
+.arttitle {
+  font-family: Futuro;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: normal;
+  color: #007369;
+}
+
+.artgalleryrowcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 4em;
+}
+
+.artgallerybox {
+  /* height: 17.5vw;
+  width: 17.5vw; */
+  padding: 1.5vw;
+  background-color: lightgrey;
+  border: 5px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 14px 20px -6px rgb(207 207 207);
+}
+
+.artgalleryimagecont {
+  height: 16vw;
+  width: 16vw;
+  position: relative;
+}
+.artgalleryboxtitle {
+  width: 100%;
+  font-family: Ubuntu;
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  color: #012626;
+}
+
+.arttextcontainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.arttextleftcontainer {
+  width: 30%;
+}
+
+.arttextrightcontainer {
+  width: 60%;
+}
+
+.arttextlefttitle {
+  font-family: Futuro;
+  color: #012626;
+  font-size: 34px;
+}
+
+.arttextlefttext {
+  font-family: Ubuntu;
+  color: #012626;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6em;
+}
+.artpercentagecontainer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-direction: row;
+}
+
+.artpercentagebox {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.artpercentagetitle {
+  font-family: Futuro;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: normal;
+  color: #005a5b;
+  margin-bottom: 0px !important;
+}
+
+.artpercentage {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 100%;
+}
+.artpercentagetext {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 120%;
+
+  /* identical to box height, or 24px */
+  text-align: center;
+  text-transform: lowercase;
+
+  color: #005a5b;
+}
+
+.artistjoincontainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+.artistjointitle {
+  font-family: Futuro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 175%;
+
+  /* identical to box height, or 52px */
+
+  color: #012626;
+}
+
+.artistjoinbutton {
+  padding: 32px 56px;
+  background: #02a676;
+  border-radius: 53px;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: Ubuntu !important;
+  font-size: 24px;
+}
+.artistjoinbutton:hover {
+  background: #007369;
+}
+.line {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+@media screen and (max-width: 992px) {
+  .artsubtitle {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .artsubcontainer {
+    width: 100vw;
+  }
+  .arttitle {
+    font-size: 26px;
+    font-weight: 400;
+  }
+
+  .arttextcontainer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  .arttextleftcontainer {
+    width: 100vw;
+  }
+  .arttextlefttitle {
+    font-size: 24px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+  }
+
+  .arttextlefttext {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .arttextrightcontainer {
+    width: 100vw;
+  }
+  .artpercentagetitle {
+    font-size: 39px;
+    font-weight: 400;
+  }
+  .artpercentagetext {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .artistjointitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .artistjoinbutton {
+    padding: 24px 48px 24px 38px;
+    border-radius: 53px;
+    font-size: 17px;
+    font-weight: 400;
+  }
+
+  .artgalleryrowcontainer {
+    display: none;
+    margin-top: 0px;
+  }
+
+  .artgalleryimagecont {
+    height: 30vw;
+    width: 30vw;
+    position: relative;
+  }
+}
