@@ -59,21 +59,21 @@ const [address, setAddress] = useState(null)
 
   // useEffect(() => {}, []);
 
-  useEffect(() => {
-    console.log(window.ethereum)
-    window.ethereum ?
-      ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
-        setAddress(accounts[0])
-        let w3 = new Web3(ethereum)
-        w3.givenProvider.request({
-          method: 'wallet_addEthereumChain',
-          params: [AVALANCHE_MAINNET_PARAMS]
-        })
-        console.log(w3.givenProvider.request)
-        setWeb3(w3)
-      }).catch((err) => console.log(err))
-    : console.log("Please install MetaMask")
-  }, [])
+  // useEffect(() => {
+  //   console.log(window.ethereum)
+  //   window.ethereum ?
+  //     ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
+  //       setAddress(accounts[0])
+  //       let w3 = new Web3(ethereum)
+  //       w3.givenProvider.request({
+  //         method: 'wallet_addEthereumChain',
+  //         params: [AVALANCHE_MAINNET_PARAMS]
+  //       })
+  //       console.log(w3.givenProvider.request)
+  //       setWeb3(w3)
+  //     }).catch((err) => console.log(err))
+  //   : console.log("Please install MetaMask")
+  // }, [])
   // if (showPopUp === false) {
   //   setTimeout(() => {
   //     setShowPopUp(true);
