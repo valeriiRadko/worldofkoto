@@ -64,14 +64,23 @@ const Mobile = () => {
         <div></div>
       </animated.div>
       <animated.div style={headercontainer}>
-        <div className={styles.imagecontainer}>
+        {/* <div className={styles.imagecontainer}>
           <Image
             src="/logo.png"
             alt="Art"
             layout="fill"
+            objectFit="cover"
             className={styles.image}
           />
-        </div>
+        </div> */}
+        <div style={{width: '100%', height: '100%', position: 'relative'}}>
+  <Image
+    alt='Art'
+    src='/logo.png'
+    layout='fill'
+    objectFit='contain'
+  />
+</div>
         <div className={styles.whitepapercontainer}>
           <div className={styles.whitepaperimage}>
             <Image

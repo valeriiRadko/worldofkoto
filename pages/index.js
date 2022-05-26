@@ -123,7 +123,7 @@ const [address, setAddress] = useState(null)
         <footer className={styles.footer}>
           <span className={styles.footersubcontainer}>
             <p className={styles.termsandconditions}>
-              ®Copyright 2022. Metas & Mortals. All rights reserved
+              ®Copyright 2022. World of Koto. All rights reserved
             </p>
             <span
               style={{

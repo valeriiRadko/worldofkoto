@@ -176,7 +176,7 @@
     font-weight: 300;
   }
   .artsubcontainer {
-    width: 90vw;
+    width: 100vw;
   }
   .arttitle {
     font-size: 26px;
@@ -190,7 +190,7 @@
     margin-top: 5vh;
   }
   .arttextleftcontainer {
-    width: 100vw;
+    width: 90vw;
   }
   .arttextlefttitle {
     font-size: 24px;
