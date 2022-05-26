@@ -13,6 +13,7 @@ import Mobile from "../components/navbar/mobile";
 import { Element } from "react-scroll";
 import { ParallaxProvider } from "react-scroll-parallax";
 import PopUp from "../components/popup";
+import Web3 from 'web3'
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
@@ -39,17 +40,46 @@ const useMediaQuery = (width) => {
 
   return targetReached;
 };
-
+const AVALANCHE_MAINNET_PARAMS = {
+  chainId: '0xA86A',
+  chainName: 'Avalanche Mainnet C-Chain',
+  nativeCurrency: {
+      name: 'Avalanche',
+      symbol: 'AVAX',
+      decimals: 18
+  },
+  rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
+  blockExplorerUrls: ['https://snowtrace.io/']
+}
 export default function Home() {
   const isBreakpoint = useMediaQuery(768);
   const [showPopUp, setShowPopUp] = useState(false);
+  const [web3, setWeb3] = useState(null)
+const [address, setAddress] = useState(null)
 
-  useEffect(() => {}, [showPopUp]);
-  if (showPopUp === false) {
-    setTimeout(() => {
-      setShowPopUp(true);
-    }, 5000);
-  }
+  // useEffect(() => {}, []);
+
+  // useEffect(() => {
+  //   console.log(window.ethereum)
+  //   window.ethereum ?
+  //     ethereum.request({ method: "eth_requestAccounts" }).then((accounts) => {
+  //       setAddress(accounts[0])
+  //       let w3 = new Web3(ethereum)
+  //       w3.givenProvider.request({
+  //         method: 'wallet_addEthereumChain',
+  //         params: [AVALANCHE_MAINNET_PARAMS]
+  //       })
+  //       console.log(w3.givenProvider.request)
+  //       setWeb3(w3)
+  //     }).catch((err) => console.log(err))
+  //   : console.log("Please install MetaMask")
+  // }, [])
+  // if (showPopUp === false) {
+  //   setTimeout(() => {
+  //     setShowPopUp(true);
+  //   }, 5000);
+
+  // }
 
   return (
     <ParallaxProvider>
@@ -93,7 +123,7 @@ export default function Home() {
         <footer className={styles.footer}>
           <span className={styles.footersubcontainer}>
             <p className={styles.termsandconditions}>
-              ®Copyright 2022. Metas & Mortals. All rights reserved
+              ®Copyright 2022. World of Koto. All rights reserved
             </p>
             <span
               style={{
