@@ -13,7 +13,7 @@ import Mobile from "../components/navbar/mobile";
 import { Element } from "react-scroll";
 import { ParallaxProvider } from "react-scroll-parallax";
 import PopUp from "../components/popup";
-import Web3 from 'web3'
+// import Web3 from 'web3'
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
