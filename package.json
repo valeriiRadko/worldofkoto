@@ -27,7 +27,8 @@
     "react-slick": "^0.28.1",
     "react-spring": "^9.4.4",
     "sass": "^1.49.9",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "web3": "^1.7.3"
   },
   "devDependencies": {
     "eslint": "8.10.0",
