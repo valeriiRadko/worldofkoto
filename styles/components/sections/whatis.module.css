@@ -123,4 +123,7 @@
   .whatiscontentparagraph {
     font-size: 17px;
   }
+  .whatiscontentblur {
+    display:none;
+  }
 }
