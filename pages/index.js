@@ -123,8 +123,8 @@ const [address, setAddress] = useState(null)
         <footer className={styles.footer}>
           <span className={styles.footersubcontainer}>
             <p className={styles.termsandconditions}>
-              ®Copyright 2022. World of Koto. All rights reserved
-            </p>
+            ®Copyright 2022. The Metaversed Studio Ltd. All rights reserved
+                        </p>
             <span
               style={{
                 display: "flex",
@@ -133,7 +133,7 @@ const [address, setAddress] = useState(null)
               }}
             >
               <a
-                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                // href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.footerlink}
@@ -142,7 +142,7 @@ const [address, setAddress] = useState(null)
               </a>
               •
               <a
-                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+                // href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.footerlink}
