@@ -108,6 +108,9 @@
     margin-left: 5%;
     margin-top:70px;
   }
+  .emailcontainer{
+    min-height:100px
+  }
   .subtitle{
     margin-bottom:30px;
   }

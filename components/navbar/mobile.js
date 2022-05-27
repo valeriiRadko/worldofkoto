@@ -76,7 +76,7 @@ const Mobile = () => {
         <div style={{width: '100%', height: '100%', position: 'relative'}}>
   <Image
     alt='Art'
-    src='/logo.png'
+    src='/logo.svg'
     layout='fill'
     objectFit='contain'
   />
