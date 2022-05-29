@@ -102,11 +102,13 @@
 @media screen and (max-width: 992px) {
   .blur {
     width: 90vw;
+    height:40vh;
+    max-height:50vh;
   }
   .emailinputcontainer {
     width: 90%;
     margin-left: 5%;
-    margin-top:70px;
+    margin-top:50px;
   }
   .emailcontainer{
     min-height:100px
