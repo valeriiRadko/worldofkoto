@@ -59,6 +59,29 @@ const Mobile = () => {
           <Link replace href="/">
             <a className={styles.mobilelink}>Whitepaper</a>
           </Link>
+
+          <div style={{width:200,display:"flex",justifyContent:"space-evenly",marginTop:30}}>
+            <Link replace href="https://twitter.com/WorldofKoto">
+              <a target="_blank">
+          <Image src="/twitter.svg" alt="twitter" layout="fixed" height={30} width={30}/>
+                </a>
+            </Link>
+            <Link replace href="https://www.instagram.com/worldofkoto/">
+              <a target="_blank">
+          <Image src="/instagram.svg" alt="instagram" layout="fixed" height={30} width={30}/>
+                </a>
+            </Link>
+            <Link replace href="/">
+              <a target="_blank">
+          <Image src="/discord.svg" alt="discord" layout="fixed" height={30} width={30}/>
+                </a>
+            </Link>
+            <Link replace href="https://medium.com/@worldofkoto">
+              <a target="_blank">
+          <Image src="/medium.svg" alt="medium" layout="fixed" height={30} width={30}/>
+                </a>
+            </Link>
+        </div>
         </animated.div>
 
         <div></div>
