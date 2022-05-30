@@ -46,7 +46,7 @@ const Guardians = () => {
           <p className={styles.text}>
             Will you join them, or fight them? Explore the depth of the
             Metaverse, and find the lost crates to save the only pieces of art
-            left in the world
+            left in the world.
           </p>
 
           <p className={styles.text}>
