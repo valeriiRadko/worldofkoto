@@ -9,11 +9,11 @@ import Link from "next/link";
 const Mobile = () => {
   const [isOpen, setOpen] = React.useState(false);
   const containerstyle = useSpring({
-    height: isOpen ? "100vh" : "10vh",
+    height: isOpen ? "100vh" : "7vh",
     width: isOpen ? "100vw" : "22.5vw",
     backgroundColor: isOpen ? "white" : "transparent",
     borderBottomRightRadius: isOpen ? "0px" : "100px",
-    marginTop:10
+    marginTop:10,
   });
 
   const linkcontainer = useSpring({
@@ -23,7 +23,7 @@ const Mobile = () => {
 
   const headercontainer = useSpring({
     width: isOpen ? "0vh" : "80vw",
-    height: "10vh",
+    height: "7vh",
     display: "flex",
   });
 
