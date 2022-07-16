@@ -13,7 +13,7 @@ const Mobile = () => {
     width: isOpen ? "100vw" : "22.5vw",
     backgroundColor: isOpen ? "white" : "transparent",
     borderBottomRightRadius: isOpen ? "0px" : "100px",
-    marginTop:10,
+    marginTop: 10,
   });
 
   const linkcontainer = useSpring({
@@ -60,28 +60,59 @@ const Mobile = () => {
             <a className={styles.mobilelink}>Whitepaper</a>
           </Link>
 
-          <div style={{width:200,display:"flex",justifyContent:"space-evenly",marginTop:30}}>
+          <div
+            style={{
+              width: 200,
+              display: "flex",
+              justifyContent: "space-evenly",
+              marginTop: 30,
+            }}
+          >
             <Link replace href="https://twitter.com/WorldofKoto">
               <a target="_blank">
-          <Image src="/twitter.svg" alt="twitter" layout="fixed" height={30} width={30}/>
-                </a>
+                <Image
+                  src="/twitter.svg"
+                  alt="twitter"
+                  layout="fixed"
+                  height={30}
+                  width={30}
+                />
+              </a>
             </Link>
             <Link replace href="https://www.instagram.com/worldofkoto/">
               <a target="_blank">
-          <Image src="/instagram.svg" alt="instagram" layout="fixed" height={30} width={30}/>
-                </a>
+                <Image
+                  src="/instagram.svg"
+                  alt="instagram"
+                  layout="fixed"
+                  height={30}
+                  width={30}
+                />
+              </a>
             </Link>
             <Link replace href="/">
               <a target="_blank">
-          <Image src="/discord.svg" alt="discord" layout="fixed" height={30} width={30}/>
-                </a>
+                <Image
+                  src="/discord.svg"
+                  alt="discord"
+                  layout="fixed"
+                  height={30}
+                  width={30}
+                />
+              </a>
             </Link>
             <Link replace href="https://medium.com/@worldofkoto">
               <a target="_blank">
-          <Image src="/medium.svg" alt="medium" layout="fixed" height={30} width={30}/>
-                </a>
+                <Image
+                  src="/medium.svg"
+                  alt="medium"
+                  layout="fixed"
+                  height={30}
+                  width={30}
+                />
+              </a>
             </Link>
-        </div>
+          </div>
         </animated.div>
 
         <div></div>
@@ -96,14 +127,9 @@ const Mobile = () => {
             className={styles.image}
           />
         </div> */}
-        <div style={{width: '100%', height: '100%', position: 'relative'}}>
-  <Image
-    alt='Art'
-    src='/logo.svg'
-    layout='fill'
-    objectFit='contain'
-  />
-</div>
+        <div style={{ width: "100%", height: "100%", position: "relative" }}>
+          <Image alt="Art" src="/logo.svg" layout="fill" objectFit="contain" />
+        </div>
         <div className={styles.whitepapercontainer}>
           <div className={styles.whitepaperimage}>
             <Image

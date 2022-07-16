@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header";
 import WhatIs from "../components/sections/whatis";
@@ -12,8 +11,6 @@ import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
 import { Element } from "react-scroll";
 import { ParallaxProvider } from "react-scroll-parallax";
-import PopUp from "../components/popup";
-// import Web3 from 'web3'
 
 const useMediaQuery = (width) => {
   const [targetReached, setTargetReached] = useState(false);
@@ -41,21 +38,21 @@ const useMediaQuery = (width) => {
   return targetReached;
 };
 const AVALANCHE_MAINNET_PARAMS = {
-  chainId: '0xA86A',
-  chainName: 'Avalanche Mainnet C-Chain',
+  chainId: "0xA86A",
+  chainName: "Avalanche Mainnet C-Chain",
   nativeCurrency: {
-      name: 'Avalanche',
-      symbol: 'AVAX',
-      decimals: 18
+    name: "Avalanche",
+    symbol: "AVAX",
+    decimals: 18,
   },
-  rpcUrls: ['https://api.avax.network/ext/bc/C/rpc'],
-  blockExplorerUrls: ['https://snowtrace.io/']
-}
+  rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+  blockExplorerUrls: ["https://snowtrace.io/"],
+};
 export default function Home() {
   const isBreakpoint = useMediaQuery(768);
   const [showPopUp, setShowPopUp] = useState(false);
-  const [web3, setWeb3] = useState(null)
-const [address, setAddress] = useState(null)
+  const [web3, setWeb3] = useState(null);
+  const [address, setAddress] = useState(null);
 
   // useEffect(() => {}, []);
 
@@ -123,8 +120,8 @@ const [address, setAddress] = useState(null)
         <footer className={styles.footer}>
           <span className={styles.footersubcontainer}>
             <p className={styles.termsandconditions}>
-            ®Copyright 2022. The Metaversed Studio Ltd. All rights reserved
-                        </p>
+              ®Copyright 2022. The Metaversed Studio Ltd. All rights reserved
+            </p>
             <span
               style={{
                 display: "flex",

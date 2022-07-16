@@ -26,10 +26,14 @@ const WhatIs = () => {
             The future of art ownership
           </p>
           <p className={styles.whatiscontentparagraph}>
-          Every piece of art you own in World of Koto is either 1) an officially licensed NFT from an original work of art or 2) a fractional ownership token of a real work of art.
+            Every piece of art you own in World of Koto is either 1) an
+            officially licensed NFT from an original work of art or 2) a
+            fractional ownership token of a real work of art.
             <br />
             <br />
-            The Koto Gallery is a beautiful digital space that allows you to show off your NFT art collection in a sleek, customizable virtual gallery.
+            The Koto Gallery is a beautiful digital space that allows you to
+            show off your NFT art collection in a sleek, customizable virtual
+            gallery.
           </p>
         </div>
       </div>
@@ -53,8 +57,9 @@ const WhatIs = () => {
           <div className={styles.whatiscontenttext}>
             <p className={styles.whatiscontenttitle}>Play 2 earn game</p>
             <p className={styles.whatiscontentparagraph}>
-              <b>Guardians of Koto</b> is a Play to Earn game platform where the art you own will embody an entirely new utility: coming to life as a playable character in a series of challenging AAA games.
-
+              <b>Guardians of Koto</b> is a Play to Earn game platform where the
+              art you own will embody an entirely new utility: coming to life as
+              a playable character in a series of challenging AAA games.
             </p>
           </div>
         </div>

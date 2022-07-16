@@ -69,8 +69,9 @@ const Art = ({ isBreakPoint }) => {
           <div className={styles.arttextleftcontainer}>
             <h1 className={styles.arttextlefttitle}>Artist revenue share</h1>
             <p className={styles.arttextlefttext}>
-            We’re building an ecosystem that fairly compensates artists who contribute to the project through revenue sharing via smart contracts.
-
+              We’re building an ecosystem that fairly compensates artists who
+              contribute to the project through revenue sharing via smart
+              contracts.
             </p>
           </div>
           <div className={styles.arttextrightcontainer}>
