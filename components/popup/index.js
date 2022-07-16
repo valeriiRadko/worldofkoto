@@ -4,10 +4,11 @@ import { animated, useSpring } from "react-spring";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+
 const PopUp = ({ open, setOpen }) => {
   console.log(open);
   const styles1 = useSpring({ top: open ? "25vh" : "100vh" });
-  const styles2 = useSpring({ top: open ? "0vh" : "100vh" });
+  // const styles2 = useSpring({ top: open ? "0vh" : "100vh" });
 
   return (
     <animated.div className={styles.popupcontainer} style={styles1}>

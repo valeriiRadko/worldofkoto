@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/components/header.module.css";
-import Background from "./background.png";
+
 const Header = () => {
   return (
     <div className={styles.headercontainer}>

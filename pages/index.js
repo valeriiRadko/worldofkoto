@@ -37,22 +37,22 @@ const useMediaQuery = (width) => {
 
   return targetReached;
 };
-const AVALANCHE_MAINNET_PARAMS = {
-  chainId: "0xA86A",
-  chainName: "Avalanche Mainnet C-Chain",
-  nativeCurrency: {
-    name: "Avalanche",
-    symbol: "AVAX",
-    decimals: 18,
-  },
-  rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-  blockExplorerUrls: ["https://snowtrace.io/"],
-};
+// const AVALANCHE_MAINNET_PARAMS = {
+//   chainId: "0xA86A",
+//   chainName: "Avalanche Mainnet C-Chain",
+//   nativeCurrency: {
+//     name: "Avalanche",
+//     symbol: "AVAX",
+//     decimals: 18,
+//   },
+//   rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+//   blockExplorerUrls: ["https://snowtrace.io/"],
+// };
 export default function Home() {
   const isBreakpoint = useMediaQuery(768);
-  const [showPopUp, setShowPopUp] = useState(false);
-  const [web3, setWeb3] = useState(null);
-  const [address, setAddress] = useState(null);
+  // const [showPopUp, setShowPopUp] = useState(false);
+  // const [web3, setWeb3] = useState(null);
+  // const [address, setAddress] = useState(null);
 
   // useEffect(() => {}, []);
 
@@ -83,18 +83,7 @@ export default function Home() {
       <div className={styles.container}>
         <Head>
           <title>World of Koto</title>
-          <meta
-            name="viewport"
-            content="width=device-width,minimum-scale=1,initial-scale=1"
-          />
-
           <meta name="description" content="Explore the world of Koto" />
-          <link rel="icon" href="/favicon.ico" />
-          <link
-            rel="stylesheet"
-            type="text/css"
-            href="//fonts.googleapis.com/css?family=Ubuntu"
-          />
         </Head>
 
         <main className={styles.main}>
