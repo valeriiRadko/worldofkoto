@@ -37,22 +37,22 @@ const useMediaQuery = (width) => {
 
   return targetReached;
 };
-// const AVALANCHE_MAINNET_PARAMS = {
-//   chainId: "0xA86A",
-//   chainName: "Avalanche Mainnet C-Chain",
-//   nativeCurrency: {
-//     name: "Avalanche",
-//     symbol: "AVAX",
-//     decimals: 18,
-//   },
-//   rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-//   blockExplorerUrls: ["https://snowtrace.io/"],
-// };
+const AVALANCHE_MAINNET_PARAMS = {
+  chainId: "0xA86A",
+  chainName: "Avalanche Mainnet C-Chain",
+  nativeCurrency: {
+    name: "Avalanche",
+    symbol: "AVAX",
+    decimals: 18,
+  },
+  rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
+  blockExplorerUrls: ["https://snowtrace.io/"],
+};
 export default function Home() {
   const isBreakpoint = useMediaQuery(768);
-  // const [showPopUp, setShowPopUp] = useState(false);
-  // const [web3, setWeb3] = useState(null);
-  // const [address, setAddress] = useState(null);
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [web3, setWeb3] = useState(null);
+  const [address, setAddress] = useState(null);
 
   // useEffect(() => {}, []);
 

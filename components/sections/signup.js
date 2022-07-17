@@ -1,11 +1,12 @@
 import React from "react";
-import styles from "../../styles/components/sections/signup.module.css";
-// import MailchimpSubscribe from "react-mailchimp-subscribe";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
-// const url =
-("https://themetaversed.us14.list-manage.com/subscribe/post?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4");
+import MailchimpSubscribe from "react-mailchimp-subscribe";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import styles from "../../styles/components/sections/signup.module.css";
+
+const url =
+  "https://themetaversed.us14.list-manage.com/subscribe/post?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4";
 
 const SignUp = () => {
   const [email, setEmail] = React.useState("");
