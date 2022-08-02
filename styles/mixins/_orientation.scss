@@ -1,0 +1,7 @@
+@import "../variables";
+
+@mixin orientation($orientation) {
+  @media (orientation: $orientation) {
+    @content;
+  }
+}

@@ -1,9 +1,8 @@
 .container {
   position: fixed;
   height: 200px;
-
-  max-height: 12.5vh;
-  min-width: 100vw;
+  height: 120px;
+  width: 100%;
   top: 0;
   display: flex;
   align-items: center;
@@ -34,22 +33,23 @@
 }
 
 .button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
   font: inherit;
   cursor: pointer;
-  outline: inherit;
   font-family: Futuro;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
+  transition: color 0.3s;
+  margin: 0 20px;
 
   /* identical to box height */
 
   color: #012626;
+}
+
+.button:hover {
+  color: #02a676;
 }
 
 .link {
@@ -58,10 +58,16 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
+  transition: color 0.3s;
+  margin-left: 20px;
 
   /* identical to box height */
 
   color: #02a676;
+}
+
+.link:hover {
+  color: #012626;
 }
 
 @media screen and (max-width: 992px) {

@@ -1,26 +1,34 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: Ubuntu;
-  max-width: 100vw;
+@font-face {
+  font-family: Futuro;
+  src: url("../assets/MINIMAL-modern-futuristic-font/MBF\ Minimal.ttf")
+      format("truetype"),
+    url("../assets/MINIMAL-modern-futuristic-font/MBF\ Minimal.otf")
+      format("OpenType");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+body {
+  font-family: Ubuntu, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
-p {
-  font-family: Ubuntu;
-  line-height: 1.6em;
+
+ol,
+ul {
+  list-style: none;
 }
-@font-face {
-  font-family: Futuro;
-  src: url("../assets/MINIMAL-modern-futuristic-font/MBF\ Minimal.ttf");
+
+button {
+  background: none;
+  border: 0;
+  outline: none;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .embla {

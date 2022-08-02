@@ -9,7 +9,7 @@ class MyDocument extends Document {
           <link
             rel="stylesheet"
             type="text/css"
-            href="https://fonts.googleapis.com/css?family=Ubuntu&display=optional"
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
           />
         </Head>
         <body>

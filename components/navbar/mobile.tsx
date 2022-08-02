@@ -1,12 +1,16 @@
-import React from "react";
-import styles from "../../styles/components/navbar/mobile.module.css";
-import { animated, useSpring } from "react-spring";
-import { Fade as Hamburger } from "hamburger-react";
-import Image from "next/image";
-import { scroller } from "react-scroll";
+import React, { useCallback } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import { animated, useSpring } from "react-spring";
+import { scroller } from "react-scroll";
+import { Fade as Hamburger } from "hamburger-react";
 
-const Mobile = () => {
+import styles from "../../styles/components/navbar/mobile.module.css";
+import { NavBarProps } from ".";
+import { ScrollElement } from "../types";
+
+// TODO: merge with navbar
+function Mobile({ items }: NavBarProps) {
   const [isOpen, setOpen] = React.useState(false);
   const containerstyle = useSpring({
     height: isOpen ? "100vh" : "7vh",
@@ -27,13 +31,16 @@ const Mobile = () => {
     display: "flex",
   });
 
-  const scroll = (element) => {
+  const scroll = useCallback((element: ScrollElement) => {
     scroller.scrollTo(element, {
       duration: 1000,
       delay: 100,
       smooth: true,
+      offset: -76,
     });
-  };
+    setOpen(false);
+  }, []);
+
   return (
     <div className={styles.container}>
       <animated.div style={containerstyle}>
@@ -44,18 +51,17 @@ const Mobile = () => {
           toggle={setOpen}
         />
         <animated.div style={linkcontainer}>
-          <h1 className={styles.mobilelink} onClick={() => scroll("gallery")}>
-            Gallery
-          </h1>
-          <h1 className={styles.mobilelink} onClick={() => scroll("gallery")}>
-            Art
-          </h1>
-          <h1 className={styles.mobilelink} onClick={() => scroll("game")}>
-            Game
-          </h1>
-          <h1 className={styles.mobilelink} onClick={() => scroll("signup")}>
-            Sign Up
-          </h1>
+          {items.map((item) => (
+            <nav key={item.label}>
+              <h1
+                className={styles.mobilelink}
+                onClick={() => scroll(item.scrollElement)}
+              >
+                {item.label}
+              </h1>
+            </nav>
+          ))}
+
           <Link replace href="/">
             <a className={styles.mobilelink}>Whitepaper</a>
           </Link>
@@ -143,6 +149,6 @@ const Mobile = () => {
       </animated.div>
     </div>
   );
-};
+}
 
 export default Mobile;

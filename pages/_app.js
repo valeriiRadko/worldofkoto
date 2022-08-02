@@ -1,4 +1,6 @@
 import Head from "next/head";
+
+import "normalize.css";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -10,7 +12,7 @@ function MyApp({ Component, pageProps }) {
           content="width=device-width,minimum-scale=1,initial-scale=1"
         />
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

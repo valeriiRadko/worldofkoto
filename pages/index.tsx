@@ -1,54 +1,25 @@
 import React, { useState, useEffect, useCallback } from "react";
+import { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Header from "../components/header";
+import { ParallaxProvider } from "react-scroll-parallax";
+
+import Header from "../components/Header";
 import WhatIs from "../components/sections/whatis";
 import Art from "../components/sections/art";
 import ImageContainer from "../components/sections/image";
 import Guardians from "../components/sections/guardians";
 import SignUp from "../components/sections/signup";
+import Team from "../components/sections/Team";
 import NavBar from "../components/navbar";
 import Mobile from "../components/navbar/mobile";
-import { Element } from "react-scroll";
-import { ParallaxProvider } from "react-scroll-parallax";
+import Section from "../components/Section";
 
-const useMediaQuery = (width) => {
-  const [targetReached, setTargetReached] = useState(false);
+import styles from "../styles/Home.module.scss";
+import Footer from "../components/Footer";
+import { useMediaQuery } from "../hooks/useMediaQuery";
+import { team, AVALANCHE_MAINNET_PARAMS, menuItem } from "../config";
 
-  const updateTarget = useCallback((e) => {
-    if (e.matches) {
-      setTargetReached(true);
-    } else {
-      setTargetReached(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    const media = window.matchMedia(`(max-width: ${width}px)`);
-    media.addListener(updateTarget);
-
-    // Check on mount (callback is not called until a change occurs)
-    if (media.matches) {
-      setTargetReached(true);
-    }
-
-    return () => media.removeListener(updateTarget);
-  }, []);
-
-  return targetReached;
-};
-const AVALANCHE_MAINNET_PARAMS = {
-  chainId: "0xA86A",
-  chainName: "Avalanche Mainnet C-Chain",
-  nativeCurrency: {
-    name: "Avalanche",
-    symbol: "AVAX",
-    decimals: 18,
-  },
-  rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
-  blockExplorerUrls: ["https://snowtrace.io/"],
-};
-export default function Home() {
+const Home: NextPage = () => {
   const isBreakpoint = useMediaQuery(768);
   const [showPopUp, setShowPopUp] = useState(false);
   const [web3, setWeb3] = useState(null);
@@ -80,7 +51,7 @@ export default function Home() {
 
   return (
     <ParallaxProvider>
-      <div className={styles.container}>
+      <div className={styles.root}>
         <Head>
           <title>World of Koto</title>
           <meta name="description" content="Explore the world of Koto" />
@@ -88,57 +59,30 @@ export default function Home() {
 
         <main className={styles.main}>
           {/* <PopUp open={showPopUp} setOpen={setShowPopUp} /> */}
-          <Mobile />
-
-          <NavBar />
-
+          <Mobile items={menuItem} />
+          <NavBar items={menuItem} />
           <Header />
           <WhatIs />
-          <Element name="gallery">
+          <Section name="gallery">
             <Art isBreakPoint={isBreakpoint} />
-          </Element>
-          <ImageContainer />
-          <Element name="game">
+          </Section>
+          <Section name="art">
+            <ImageContainer />
+          </Section>
+          <Section name="game">
             <Guardians />
-          </Element>
-          <Element name="signup">
+          </Section>
+          <Section name="signup">
             <SignUp />
-          </Element>
+          </Section>
+          <Section name="team" container>
+            <Team team={team} />
+          </Section>
+          <Footer />
         </main>
-
-        <footer className={styles.footer}>
-          <span className={styles.footersubcontainer}>
-            <p className={styles.termsandconditions}>
-              ®Copyright 2022. The Metaversed Studio Ltd. All rights reserved
-            </p>
-            <span
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <a
-                // href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.footerlink}
-              >
-                Privacy
-              </a>
-              •
-              <a
-                // href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.footerlink}
-              >
-                Terms & Conditions
-              </a>
-            </span>
-          </span>
-        </footer>
       </div>
     </ParallaxProvider>
   );
-}
+};
+
+export default Home;
