@@ -16,7 +16,7 @@ function NavBar({ items }: NavBarProps) {
       duration: 1000,
       delay: 100,
       smooth: true,
-      offset: -100,
+      offset: -120,
     });
   }, []);
 
