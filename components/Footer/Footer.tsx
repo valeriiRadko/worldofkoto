@@ -7,7 +7,7 @@ function Footer() {
     <footer className={styles.footer}>
       <div className={styles["terms-and-conditions"]}>
         ®Copyright {new Date().getFullYear()}. The Metaversed Studio Ltd. All
-        rights reserved
+        rights reserved.
       </div>
       <div className={styles.links}>
         <a

@@ -26,14 +26,13 @@ const WhatIs = () => {
             The future of art ownership
           </p>
           <p className={styles.whatiscontentparagraph}>
-            Every piece of art you own in World of Koto is either 1) an
-            officially licensed NFT from an original work of art or 2) a
-            fractional ownership token of a real work of art.
-            <br />
-            <br />
-            The Koto Gallery is a beautiful digital space that allows you to
-            show off your NFT art collection in a sleek, customizable virtual
-            gallery.
+            Every NFT you own in the World of Koto is either 1) an official
+            numbered print from an original piece of art or 2) a fractional
+            ownership token of physical art.
+          </p>
+          <p className={styles.whatiscontentparagraph}>
+            The Koto Gallery will allow you to visualise and show off your art
+            collection.
           </p>
         </div>
       </div>
