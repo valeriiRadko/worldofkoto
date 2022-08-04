@@ -1,14 +1,14 @@
 import React from "react";
 
-import styles from "../../styles/components/header.module.css";
+import styles from "./Header.module.scss";
 
 const Header = () => {
   return (
-    <div className={styles.headercontainer}>
-      <h1 className={styles.headertitle}>
+    <header className={styles.root}>
+      <h1 className={styles.title}>
         Play and earn in the metaverse with contemporary art
       </h1>
-    </div>
+    </header>
   );
 };
 
