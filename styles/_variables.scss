@@ -1,0 +1,28 @@
+// colors
+$white: #fff;
+$light-grey: #f0f3f4;
+$grey: #d1d6d5;
+$green: #02a676;
+$med-green: #007369;
+$dark-green: #012626;
+$black: #000;
+
+// font size
+$base: 16px;
+
+// breapoints
+$breakpoints: (
+  "xs": 0,
+  "sm": 600px,
+  "md": 900px,
+  "lg": 1200px,
+  "xl": 1536px,
+);
+
+// transition
+$transition-duration: 0.3s;
+$transition-func: ease-in-out;
+
+// navbar
+$navbar-mobile-height: 76px;
+$navbar-desktop-height: 120px;

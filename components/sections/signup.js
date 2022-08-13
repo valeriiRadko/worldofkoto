@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../../styles/components/sections/signup.module.css";
+import Image from "next/image";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import Image from "next/image";
+import styles from "../../styles/components/sections/signup.module.css";
+
 const url =
   "https://themetaversed.us14.list-manage.com/subscribe/post?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4";
 
@@ -34,29 +35,29 @@ const SignUp = () => {
         </div>
         <div className={styles.emailcontainer}>
           <div className={styles.emailinputcontainer}>
-            {signedup?
-          <>
-          <input
-            placeholder="Enter your email"
-            value={"Thanks for Signing Up!"}
-            style={{color:'#007369'}}
-            // onChange={(e) => setEmail(e.target.value)}
-            className={styles.input}
-          />{" "}
-          </>            
-          :
-          <>
-            <input
-              placeholder="Enter your email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className={styles.input}
-            />{" "}
-            </>
-          }
+            {signedup ? (
+              <>
+                <input
+                  placeholder="Enter your email"
+                  value={"Thanks for Signing Up!"}
+                  style={{ color: "#007369" }}
+                  // onChange={(e) => setEmail(e.target.value)}
+                  className={styles.input}
+                />{" "}
+              </>
+            ) : (
+              <>
+                <input
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className={styles.input}
+                />{" "}
+              </>
+            )}
             <span className={styles.icon} onClick={onClick}>
-            <Image src="/Send.svg" alt="image" height={30} width={30} />
-          </span>
+              <Image src="/Send.svg" alt="image" height={30} width={30} />
+            </span>
           </div>
         </div>
       </div>

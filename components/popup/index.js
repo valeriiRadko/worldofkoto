@@ -1,9 +1,10 @@
 import React from "react";
-import styles from "../../styles/components/popup/index.module.css";
-import { animated, useSpring } from "react-spring";
 import Link from "next/link";
+import { animated, useSpring } from "react-spring";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
+import styles from "../../styles/components/popup/index.module.css";
+
 const PopUp = ({ open, setOpen }) => {
   console.log(open);
   const styles1 = useSpring({ top: open ? "25vh" : "100vh" });

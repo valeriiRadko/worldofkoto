@@ -2,6 +2,11 @@
   "name": "wok-fe",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@1.22.15",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ILoomans/worldofkoto.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,6 +23,7 @@
     "infinite-react-carousel": "^1.2.11",
     "next": "12.1.0",
     "next-images": "^1.8.4",
+    "normalize.css": "^8.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-mailchimp-subscribe": "^2.1.3",
@@ -30,8 +36,19 @@
     "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
+    "@tsconfig/next": "^1.0.2",
+    "@types/node": "^16.11.45",
+    "@types/react": "^17.0.47",
+    "@types/react-scroll": "^1.8.4",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4",
     "webpack": "^4.0.0"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.47"
   }
 }

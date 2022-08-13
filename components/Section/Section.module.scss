@@ -1,0 +1,12 @@
+@import "styles/mixins/respond-to";
+
+.root {
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+
+  @include respond-to("lg") {
+    max-width: 1160px;
+    padding: 0;
+  }
+}

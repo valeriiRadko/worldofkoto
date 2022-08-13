@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 // import { mediaByIndex } from "../media";
 import Image from "next/image";
@@ -16,15 +16,15 @@ const EmblaCarousel = () => {
     slidesToScroll: 2,
     skipSnaps: false,
   });
-  const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
-  const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
+  // const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
+  // const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 
-  const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
-  const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
+  // const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
+  // const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
   const onSelect = useCallback(() => {
     if (!embla) return;
-    setPrevBtnEnabled(embla.canScrollPrev());
-    setNextBtnEnabled(embla.canScrollNext());
+    // setPrevBtnEnabled(embla.canScrollPrev());
+    // setNextBtnEnabled(embla.canScrollNext());
   }, [embla]);
 
   useEffect(() => {

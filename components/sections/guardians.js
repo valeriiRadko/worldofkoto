@@ -1,6 +1,7 @@
 import React from "react";
-import styles from "../../styles/components/sections/guardians.module.css";
 import Image from "next/image";
+import styles from "../../styles/components/sections/guardians.module.css";
+
 const Guardians = () => {
   return (
     <div className={styles.container}>

@@ -5,9 +5,8 @@
   width: 100vw;
   display: flex;
   background-color: white;
-  padding-top:10px;
-  padding-bottom:10px;
-  /* padding-top: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .mobilelink {
