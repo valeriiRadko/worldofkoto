@@ -12,16 +12,16 @@ function Footer() {
           <Image
             src="/images/powered-by/cubiq.jpeg"
             alt="cubiq"
-            width={178}
-            height={87}
+            width={150}
+            height={78}
           />
         </span>
         <span className={styles["image-wrapper"]}>
           <Image
             src="/images/powered-by/avalanche.png"
             alt="avalanche"
-            width={80}
-            height={80}
+            width={300}
+            height={60}
           />
         </span>
       </div>

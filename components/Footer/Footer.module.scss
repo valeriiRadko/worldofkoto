@@ -29,6 +29,7 @@
     padding-top: 15px;
 
     @include respond-to("md") {
+      padding-top: 0;
       padding-left: 40px;
     }
   }
