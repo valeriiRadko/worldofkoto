@@ -10,7 +10,7 @@ function Footer() {
         <span className={styles["powered-by"]}>Powered by</span>
         <span className={styles["image-wrapper"]}>
           <Image
-            src="/images/powered-by/cubiq.png"
+            src="/images/powered-by/cubiq.jpeg"
             alt="cubiq"
             width={178}
             height={87}
@@ -20,8 +20,8 @@ function Footer() {
           <Image
             src="/images/powered-by/avalanche.png"
             alt="avalanche"
-            width={70}
-            height={78}
+            width={80}
+            height={80}
           />
         </span>
       </div>

@@ -18,7 +18,7 @@ export const team: TeamMember[] = [
     position: "Co-founder/ceo",
     description:
       "Digital marketer with over 10 years experience leading digital strategy for a variety of top brands. Likes to right-click-save and go fast.",
-    photo: "/images/team/blank.jpeg",
+    photo: "/images/team/RIPPERZ.gif",
   },
   {
     name: "Lou Manace",
