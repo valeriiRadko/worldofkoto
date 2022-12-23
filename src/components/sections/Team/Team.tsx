@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "next/legacy/image";
+import Image from "next/legacy/image"
 
 import { TeamMember } from "../../types"
 import styles from "./Team.module.scss"

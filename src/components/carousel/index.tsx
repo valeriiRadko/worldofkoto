@@ -1,6 +1,6 @@
 import React, { useEffect, useCallback } from "react"
 import useEmblaCarousel from "embla-carousel-react"
-import Image from "next/legacy/image";
+import Image from "next/legacy/image"
 import styles from "../../styles/components/sections/art.module.css"
 const slidecontent = [
   { title: "Confidential", image: "/confidential1.png" },

@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "next/legacy/image";
+import Image from "next/legacy/image"
 import styles from "../../styles/components/sections/guardians.module.css"
 
 const Guardians = () => {

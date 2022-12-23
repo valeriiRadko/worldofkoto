@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "next/legacy/image";
+import Image from "next/legacy/image"
 import styles from "../../styles/components/sections/whatis.module.css"
 import { Parallax } from "react-scroll-parallax"
 const WhatIs = () => {

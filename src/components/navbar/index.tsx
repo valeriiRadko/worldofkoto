@@ -1,5 +1,5 @@
 import React, { useCallback } from "react"
-import Image from "next/legacy/image";
+import Image from "next/legacy/image"
 import Link from "next/link"
 import { scroller } from "react-scroll"
 
