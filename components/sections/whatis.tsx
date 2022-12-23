@@ -15,7 +15,11 @@ const WhatIs = () => {
               layout="fill"
               objectFit="contain"
             />
-            <Parallax speed={1} startScroll={1000} translateX={200}>
+            <Parallax
+              speed={1}
+              startScroll={1000}
+              translateY={["2000px", "-200px"]}
+            >
               <div className={styles.whatiscontentblur} />
             </Parallax>
           </div>
