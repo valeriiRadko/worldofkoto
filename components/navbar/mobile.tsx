@@ -1,6 +1,6 @@
 import React, { useCallback } from "react"
 import Link from "next/link"
-import Image from "next/image"
+import Image from "next/legacy/image";
 import { animated, useSpring } from "react-spring"
 import { scroller } from "react-scroll"
 import { Fade as Hamburger } from "hamburger-react"

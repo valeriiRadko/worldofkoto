@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../../styles/components/sections/image.module.css"
-import Image from "next/image"
+import Image from "next/legacy/image";
 const ImageContainer = () => {
   return (
     <div className={styles.imagecontainer}>

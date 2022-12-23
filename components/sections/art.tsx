@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../../styles/components/sections/art.module.css"
-import Image from "next/image"
+import Image from "next/legacy/image";
 import Carousel from "../carousel"
 import Link from "next/link"
 
