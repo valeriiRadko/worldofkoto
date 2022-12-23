@@ -1,12 +1,12 @@
-@import "styles/variables";
-@import "styles/mixins/respond-to";
-@import "styles/mixins/px-to-rem";
+@import "../../styles/variables";
+@import "../../styles/mixins/respond-to";
+@import "../../styles/mixins/px-to-rem";
 
 .root {
   margin-top: $navbar-mobile-height;
   height: calc(100vh - $navbar-mobile-height);
   width: 100vw;
-  background-image: url("../../public/background.png");
+  background-image: url("/background.png");
   background-size: cover;
 
   @include respond-to("md") {

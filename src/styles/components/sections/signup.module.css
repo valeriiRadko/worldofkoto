@@ -1,7 +1,7 @@
 .signupcontainer {
   width: 100vw;
   height: 60vh;
-  background-image: url("../../../public/signup.png");
+  background-image: url("/signup.png");
   background-size: cover;
   display: flex;
   justify-content: center;
