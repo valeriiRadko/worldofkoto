@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-import styles from "./Header.module.scss";
+import styles from "./Header.module.scss"
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         Play and earn in the metaverse with contemporary art
       </h1>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

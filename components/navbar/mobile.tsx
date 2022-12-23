@@ -1,35 +1,35 @@
-import React, { useCallback } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { animated, useSpring } from "react-spring";
-import { scroller } from "react-scroll";
-import { Fade as Hamburger } from "hamburger-react";
+import React, { useCallback } from "react"
+import Link from "next/link"
+import Image from "next/image"
+import { animated, useSpring } from "react-spring"
+import { scroller } from "react-scroll"
+import { Fade as Hamburger } from "hamburger-react"
 
-import styles from "../../styles/components/navbar/mobile.module.css";
-import { NavBarProps } from ".";
-import { ScrollElement } from "../types";
+import styles from "../../styles/components/navbar/mobile.module.css"
+import { NavBarProps } from "."
+import { ScrollElement } from "../types"
 
 // TODO: merge with navbar
 function Mobile({ items }: NavBarProps) {
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = React.useState(false)
   const containerstyle = useSpring({
     height: isOpen ? "100vh" : "7vh",
     width: isOpen ? "100vw" : "22.5vw",
     backgroundColor: isOpen ? "white" : "transparent",
     borderBottomRightRadius: isOpen ? "0px" : "100px",
     marginTop: 10,
-  });
+  })
 
   const linkcontainer = useSpring({
     height: isOpen ? "100%" : "0%",
     overflow: "hidden",
-  });
+  })
 
   const headercontainer = useSpring({
     width: isOpen ? "0vh" : "80vw",
     height: "7vh",
     display: "flex",
-  });
+  })
 
   const scroll = useCallback((element: ScrollElement) => {
     scroller.scrollTo(element, {
@@ -37,9 +37,9 @@ function Mobile({ items }: NavBarProps) {
       delay: 100,
       smooth: true,
       offset: -76,
-    });
-    setOpen(false);
-  }, []);
+    })
+    setOpen(false)
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -148,7 +148,7 @@ function Mobile({ items }: NavBarProps) {
         </div>
       </animated.div>
     </div>
-  );
+  )
 }
 
-export default Mobile;
+export default Mobile

@@ -1,13 +1,13 @@
-import React, { useCallback } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { scroller } from "react-scroll";
+import React, { useCallback } from "react"
+import Image from "next/image"
+import Link from "next/link"
+import { scroller } from "react-scroll"
 
-import styles from "../../styles/components/navbar/index.module.css";
-import { MenuItem, ScrollElement } from "../types";
+import styles from "../../styles/components/navbar/index.module.css"
+import { MenuItem, ScrollElement } from "../types"
 
 export interface NavBarProps {
-  items: MenuItem[];
+  items: MenuItem[]
 }
 
 function NavBar({ items }: NavBarProps) {
@@ -17,8 +17,8 @@ function NavBar({ items }: NavBarProps) {
       delay: 100,
       smooth: true,
       offset: -120,
-    });
-  }, []);
+    })
+  }, [])
 
   return (
     <div className={styles.container}>
@@ -50,7 +50,7 @@ function NavBar({ items }: NavBarProps) {
         </Link>
       </ul>
     </div>
-  );
+  )
 }
 
-export default NavBar;
+export default NavBar

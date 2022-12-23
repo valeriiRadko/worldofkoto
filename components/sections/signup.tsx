@@ -1,26 +1,26 @@
-import React from "react";
-import Image from "next/image";
-import styles from "../../styles/components/sections/signup.module.css";
+import React from "react"
+import Image from "next/image"
+import styles from "../../styles/components/sections/signup.module.css"
 
 const url =
-  "https://themetaversed.us14.list-manage.com/subscribe/post?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4";
+  "https://themetaversed.us14.list-manage.com/subscribe/post?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4"
 
 const SignUp = () => {
-  const [email, setEmail] = React.useState("");
-  const [signedup, setSignedup] = React.useState(false);
+  const [email, setEmail] = React.useState("")
+  const [signedup, setSignedup] = React.useState(false)
   const onClick = async () => {
     try {
       let data = await fetch(
         `https://cors-anywhere-koto.herokuapp.com/https://themetaversed.us14.list-manage.com/subscribe/post-json?u=b0b78323f9cd3610a6b1a9b26&amp;id=22f804b3d4&EMAIL=${email}`
-      );
-      console.log(data);
-      data = await data.json();
-      console.log(data);
-      setSignedup(true);
+      )
+      console.log(data)
+      data = await data.json()
+      console.log(data)
+      setSignedup(true)
     } catch (e) {
-      console.log(e);
+      console.log(e)
     }
-  };
+  }
   return (
     <div className={styles.signupcontainer}>
       <div className={styles.blur}>
@@ -59,7 +59,7 @@ const SignUp = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default SignUp;
+export default SignUp

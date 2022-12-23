@@ -1,11 +1,11 @@
-import React from "react";
-import Image from "next/image";
+import React from "react"
+import Image from "next/image"
 
-import { TeamMember } from "../../types";
-import styles from "./Team.module.scss";
+import { TeamMember } from "../../types"
+import styles from "./Team.module.scss"
 
 interface TeamProps {
-  team: TeamMember[];
+  team: TeamMember[]
 }
 
 function Team({ team }: TeamProps) {
@@ -31,7 +31,7 @@ function Team({ team }: TeamProps) {
         ))}
       </ul>
     </div>
-  );
+  )
 }
 
-export default Team;
+export default Team

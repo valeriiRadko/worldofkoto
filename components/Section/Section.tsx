@@ -1,13 +1,13 @@
-import React from "react";
-import { Element } from "react-scroll";
+import React from "react"
+import { Element } from "react-scroll"
 
-import { ScrollElement as Section } from "../types";
-import styles from "./Section.module.scss";
+import { ScrollElement as Section } from "../types"
+import styles from "./Section.module.scss"
 
 interface ScrollElementProps {
-  name: Section;
-  children: React.ReactNode;
-  container?: boolean;
+  name: Section
+  children: React.ReactNode
+  container?: boolean
 }
 
 function Section({ children, name, container = false }: ScrollElementProps) {
@@ -15,6 +15,6 @@ function Section({ children, name, container = false }: ScrollElementProps) {
     <section className={container ? styles.root : undefined}>
       <Element name={name}>{children}</Element>
     </section>
-  );
+  )
 }
-export default Section;
+export default Section

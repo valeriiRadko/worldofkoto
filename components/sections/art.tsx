@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "../../styles/components/sections/art.module.css";
-import Image from "next/image";
-import Carousel from "../carousel";
-import Link from "next/link";
+import React from "react"
+import styles from "../../styles/components/sections/art.module.css"
+import Image from "next/image"
+import Carousel from "../carousel"
+import Link from "next/link"
 
 interface ArtProps {
-  isBreakPoint: boolean;
+  isBreakPoint: boolean
 }
 
 const Art = ({ isBreakPoint }: ArtProps) => {
@@ -128,7 +128,7 @@ const Art = ({ isBreakPoint }: ArtProps) => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Art;
+export default Art

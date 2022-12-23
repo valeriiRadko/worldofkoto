@@ -1,6 +1,6 @@
-import React from "react";
-import styles from "../../styles/components/sections/image.module.css";
-import Image from "next/image";
+import React from "react"
+import styles from "../../styles/components/sections/image.module.css"
+import Image from "next/image"
 const ImageContainer = () => {
   return (
     <div className={styles.imagecontainer}>
@@ -19,7 +19,7 @@ const ImageContainer = () => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ImageContainer;
+export default ImageContainer

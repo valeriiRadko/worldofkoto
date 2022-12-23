@@ -1,4 +1,4 @@
-import { MenuItem, TeamMember } from "../components/types";
+import { MenuItem, TeamMember } from "../components/types"
 
 export const AVALANCHE_MAINNET_PARAMS = {
   chainId: "0xA86A",
@@ -10,7 +10,7 @@ export const AVALANCHE_MAINNET_PARAMS = {
   },
   rpcUrls: ["https://api.avax.network/ext/bc/C/rpc"],
   blockExplorerUrls: ["https://snowtrace.io/"],
-};
+}
 
 export const team: TeamMember[] = [
   {
@@ -48,7 +48,7 @@ export const team: TeamMember[] = [
       "Sasha is an architectural designer and XR developer who’s obsessed with creating new aesthetics. She’s also the co-founder of iHeartBlob, an award-winning architectural design studio.",
     photo: "/images/team/sasha.jpeg",
   },
-];
+]
 
 export const menuItem: MenuItem[] = [
   { label: "Gallery", scrollElement: "gallery" },
@@ -57,4 +57,4 @@ export const menuItem: MenuItem[] = [
   { label: "Sign Up", scrollElement: "signup" },
   { label: "Team", scrollElement: "team" },
   // { label: "Advisors", scrollElement: "advisors" },
-];
+]

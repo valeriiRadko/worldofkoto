@@ -1,37 +1,37 @@
-import React, { useEffect, useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
+import React, { useEffect, useCallback } from "react"
+import useEmblaCarousel from "embla-carousel-react"
 // import { mediaByIndex } from "../media";
-import Image from "next/image";
-import styles from "../../styles/components/sections/art.module.css";
+import Image from "next/image"
+import styles from "../../styles/components/sections/art.module.css"
 const slidecontent = [
   { title: "Confidential", image: "/confidential1.png" },
   { title: "Confidential", image: "/confidential2.png" },
   { title: "Confidential", image: "/confidential3.png" },
-];
+]
 
 const EmblaCarousel = () => {
-  const SLIDE_COUNT = 3;
-  const slides = Array.from(Array(SLIDE_COUNT).keys());
+  const SLIDE_COUNT = 3
+  const slides = Array.from(Array(SLIDE_COUNT).keys())
   const [viewportRef, embla] = useEmblaCarousel({
     slidesToScroll: 2,
     skipSnaps: false,
-  });
+  })
   // const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   // const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
 
   // const scrollPrev = useCallback(() => embla && embla.scrollPrev(), [embla]);
   // const scrollNext = useCallback(() => embla && embla.scrollNext(), [embla]);
   const onSelect = useCallback(() => {
-    if (!embla) return;
+    if (!embla) return
     // setPrevBtnEnabled(embla.canScrollPrev());
     // setNextBtnEnabled(embla.canScrollNext());
-  }, [embla]);
+  }, [embla])
 
   useEffect(() => {
-    if (!embla) return;
-    embla.on("select", onSelect);
-    onSelect();
-  }, [embla, onSelect]);
+    if (!embla) return
+    embla.on("select", onSelect)
+    onSelect()
+  }, [embla, onSelect])
 
   return (
     <div className="embla">
@@ -59,7 +59,7 @@ const EmblaCarousel = () => {
       {/* <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
       <NextButton onClick={scrollNext} enabled={nextBtnEnabled} /> */}
     </div>
-  );
-};
+  )
+}
 
-export default EmblaCarousel;
+export default EmblaCarousel

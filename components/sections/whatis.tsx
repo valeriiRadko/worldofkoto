@@ -1,7 +1,7 @@
-import React from "react";
-import Image from "next/image";
-import styles from "../../styles/components/sections/whatis.module.css";
-import { Parallax } from "react-scroll-parallax";
+import React from "react"
+import Image from "next/image"
+import styles from "../../styles/components/sections/whatis.module.css"
+import { Parallax } from "react-scroll-parallax"
 const WhatIs = () => {
   return (
     <div className={styles.whatiscontainer}>
@@ -68,7 +68,7 @@ const WhatIs = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default WhatIs;
+export default WhatIs

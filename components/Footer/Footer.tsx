@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
+import Image from "next/image"
+import React from "react"
 
-import styles from "./Footer.module.scss";
+import styles from "./Footer.module.scss"
 
 function Footer() {
   return (
@@ -51,7 +51,7 @@ function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

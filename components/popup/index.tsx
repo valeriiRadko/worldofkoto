@@ -1,24 +1,24 @@
-import React from "react";
-import Link from "next/link";
-import { animated, useSpring } from "react-spring";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
-import styles from "../../styles/components/popup/index.module.css";
+import React from "react"
+import Link from "next/link"
+import { animated, useSpring } from "react-spring"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faClose } from "@fortawesome/free-solid-svg-icons"
+import styles from "../../styles/components/popup/index.module.css"
 
 interface PopUpProps {
-  open: boolean;
-  setOpen: (open: boolean) => void;
+  open: boolean
+  setOpen: (open: boolean) => void
 }
 
 const PopUp = ({ open, setOpen }: PopUpProps) => {
-  const styles1 = useSpring({ top: open ? "25vh" : "100vh" });
-  const styles2 = useSpring({ top: open ? "0vh" : "100vh" });
+  const styles1 = useSpring({ top: open ? "25vh" : "100vh" })
+  const styles2 = useSpring({ top: open ? "0vh" : "100vh" })
 
   return (
     <animated.div className={styles.popupcontainer} style={styles1}>
       <div
         onClick={() => {
-          setOpen(false);
+          setOpen(false)
         }}
         style={{ width: 50, height: 50, display: "flex" }}
       >
@@ -32,7 +32,7 @@ const PopUp = ({ open, setOpen }: PopUpProps) => {
         </a>
       </Link>
     </animated.div>
-  );
-};
+  )
+}
 
-export default PopUp;
+export default PopUp

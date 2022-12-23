@@ -1,29 +1,29 @@
-import React, { useState, useEffect, useCallback } from "react";
-import { NextPage } from "next";
-import Head from "next/head";
-import { ParallaxProvider } from "react-scroll-parallax";
+import React, { useState, useEffect, useCallback } from "react"
+import { NextPage } from "next"
+import Head from "next/head"
+import { ParallaxProvider } from "react-scroll-parallax"
 
-import Header from "../components/Header";
-import WhatIs from "../components/sections/whatis";
-import Art from "../components/sections/art";
-import ImageContainer from "../components/sections/image";
-import Guardians from "../components/sections/guardians";
-import SignUp from "../components/sections/signup";
-import Team from "../components/sections/Team";
-import NavBar from "../components/navbar";
-import Mobile from "../components/navbar/mobile";
-import Section from "../components/Section";
+import Header from "../components/Header"
+import WhatIs from "../components/sections/whatis"
+import Art from "../components/sections/art"
+import ImageContainer from "../components/sections/image"
+import Guardians from "../components/sections/guardians"
+import SignUp from "../components/sections/signup"
+import Team from "../components/sections/Team"
+import NavBar from "../components/navbar"
+import Mobile from "../components/navbar/mobile"
+import Section from "../components/Section"
 
-import styles from "../styles/Home.module.scss";
-import Footer from "../components/Footer";
-import { useMediaQuery } from "../hooks/useMediaQuery";
-import { team, AVALANCHE_MAINNET_PARAMS, menuItem } from "../config";
+import styles from "../styles/Home.module.scss"
+import Footer from "../components/Footer"
+import { useMediaQuery } from "../hooks/useMediaQuery"
+import { team, AVALANCHE_MAINNET_PARAMS, menuItem } from "../config"
 
 const Home: NextPage = () => {
-  const isBreakpoint = useMediaQuery(768);
-  const [showPopUp, setShowPopUp] = useState(false);
-  const [web3, setWeb3] = useState(null);
-  const [address, setAddress] = useState(null);
+  const isBreakpoint = useMediaQuery(768)
+  const [showPopUp, setShowPopUp] = useState(false)
+  const [web3, setWeb3] = useState(null)
+  const [address, setAddress] = useState(null)
 
   // useEffect(() => {}, []);
 
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
         </main>
       </div>
     </ParallaxProvider>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

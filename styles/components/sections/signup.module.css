@@ -10,7 +10,7 @@
 
 .blur {
   max-height: 30vh;
-  height:300px;
+  height: 300px;
   width: 50vw;
   background-color: rgba(71, 7, 53, 0.2);
   background-blend-mode: multiply;
@@ -32,7 +32,7 @@
 
 .emailcontainer {
   min-height: 54px;
-  min-width:33vw;
+  min-width: 33vw;
 }
 .title {
   font-family: Futuro;
@@ -66,16 +66,16 @@
   border-radius: 100px;
   width: 50%;
   margin-left: 20%;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.icon{
-  margin-right:10px;
-  height:100%;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+.icon {
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .input {
   border: none;
@@ -101,18 +101,18 @@
 @media screen and (max-width: 992px) {
   .blur {
     width: 90vw;
-    height:50vh;
-    max-height:50vh;
+    height: 50vh;
+    max-height: 50vh;
   }
   .emailinputcontainer {
     width: 90%;
     margin-left: 5%;
-    margin-top:50px;
+    margin-top: 50px;
   }
-  .emailcontainer{
-    min-height:100px
+  .emailcontainer {
+    min-height: 100px;
   }
-  .subtitle{
-    margin-bottom:30px;
+  .subtitle {
+    margin-bottom: 30px;
   }
 }

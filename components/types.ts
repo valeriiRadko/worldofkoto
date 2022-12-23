@@ -4,16 +4,16 @@ export type ScrollElement =
   | "game"
   | "signup"
   | "team"
-  | "advisors";
+  | "advisors"
 
 export interface TeamMember {
-  name: string;
-  position: string;
-  description: string;
-  photo: string;
+  name: string
+  position: string
+  description: string
+  photo: string
 }
 
 export interface MenuItem {
-  label: string;
-  scrollElement: ScrollElement;
+  label: string
+  scrollElement: ScrollElement
 }
