@@ -3,7 +3,12 @@ import styles from "../../styles/components/sections/art.module.css";
 import Image from "next/image";
 import Carousel from "../carousel";
 import Link from "next/link";
-const Art = ({ isBreakPoint }) => {
+
+interface ArtProps {
+  isBreakPoint: boolean;
+}
+
+const Art = ({ isBreakPoint }: ArtProps) => {
   return (
     <div className={styles.artcontainer}>
       <div className={styles.artsubcontainer}>

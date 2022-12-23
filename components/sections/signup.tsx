@@ -1,8 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/components/sections/signup.module.css";
 
 const url =

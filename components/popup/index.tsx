@@ -5,8 +5,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import styles from "../../styles/components/popup/index.module.css";
 
-const PopUp = ({ open, setOpen }) => {
-  console.log(open);
+interface PopUpProps {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+}
+
+const PopUp = ({ open, setOpen }: PopUpProps) => {
   const styles1 = useSpring({ top: open ? "25vh" : "100vh" });
   const styles2 = useSpring({ top: open ? "0vh" : "100vh" });
 
