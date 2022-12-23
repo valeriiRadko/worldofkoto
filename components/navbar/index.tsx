@@ -43,10 +43,8 @@ function NavBar({ items }: NavBarProps) {
             </li>
           </nav>
         ))}
-        <Link replace href="/">
-          <a target="_blank" className={styles.link}>
-            Whitepaper
-          </a>
+        <Link replace href="/" target="_blank" className={styles.link}>
+          Whitepaper
         </Link>
       </ul>
     </div>

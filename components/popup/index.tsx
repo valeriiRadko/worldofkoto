@@ -26,10 +26,12 @@ const PopUp = ({ open, setOpen }: PopUpProps) => {
       </div>
 
       <h1 style={{ fontFamily: "Ubuntu" }}>Join the whitelist</h1>
-      <Link href="https://docs.google.com/forms/d/e/1FAIpQLScV9iER8pXjQn57Agfman85MO7AVLOHJ3W0Bbu0qgtxs8oyGg/viewform">
-        <a className={styles.artistjoinbutton} target="_blank">
-          Join Whitelist
-        </a>
+      <Link
+        href="https://docs.google.com/forms/d/e/1FAIpQLScV9iER8pXjQn57Agfman85MO7AVLOHJ3W0Bbu0qgtxs8oyGg/viewform"
+        className={styles.artistjoinbutton}
+        target="_blank"
+      >
+        Join Whitelist
       </Link>
     </animated.div>
   )

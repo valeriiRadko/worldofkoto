@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import React from "react"
 
 import styles from "./Footer.module.scss"
@@ -31,23 +32,23 @@ function Footer() {
           rights reserved.
         </div>
         <div className={styles.links}>
-          <a
+          <Link
             href="/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
             Privacy
-          </a>
+          </Link>
           •
-          <a
+          <Link
             href="/"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
           >
             Terms & Conditions
-          </a>
+          </Link>
         </div>
       </div>
     </footer>
