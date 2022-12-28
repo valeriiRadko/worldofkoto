@@ -15,33 +15,33 @@
     "update": "ncu --target minor -u"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.0",
-    "@fortawesome/free-solid-svg-icons": "^6.1.0",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "embla-carousel-react": "^6.2.0",
-    "hamburger-react": "^2.4.1",
-    "next": "^13.1.0",
+    "hamburger-react": "^2.5.0",
+    "next": "^13.1.1",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scroll": "^1.8.9",
-    "react-scroll-parallax": "^3.0.5",
-    "react-spring": "^9.4.4",
-    "sass": "^1.49.9"
+    "react-scroll-parallax": "^3.3.2",
+    "react-spring": "^9.6.1",
+    "sass": "^1.57.1"
   },
   "devDependencies": {
-    "@tsconfig/next": "^1.0.2",
-    "@types/node": "^18.11.17",
+    "@tsconfig/next": "^1.0.4",
+    "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
     "@types/react-scroll": "^1.8.5",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "eslint": "8.10.0",
-    "eslint-config-next": "^13.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "eslint": "8.30.0",
+    "eslint-config-next": "^13.1.1",
     "eslint-config-prettier": "^8.5.0",
     "npm-check-updates": "^16.6.2",
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   },
   "resolutions": {
     "@types/react": "^18.0.26"
