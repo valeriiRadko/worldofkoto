@@ -1,0 +1,89 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins/respond-to";
+@import "../../../styles/mixins/px-to-rem";
+
+.root {
+  .headline {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Futuro;
+    font-size: px-to-rem(34px);
+    font-weight: 400;
+    margin: 60px auto 40px;
+  }
+
+  .members {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+
+    @include respond-to("sm") {
+      flex-direction: row;
+    }
+  }
+
+  .member {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @include respond-to("md") {
+      flex: 50%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      flex-grow: 0;
+      align-items: flex-start;
+      padding-right: 40px;
+    }
+  }
+
+  .photo-wrapper {
+    border-radius: 10px;
+    width: 186px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    @include respond-to("md") {
+      margin-right: 32px;
+    }
+  }
+
+  .name {
+    font-family: Futuro;
+    font-size: px-to-rem(26px);
+    text-transform: uppercase;
+    text-align: center;
+
+    @include respond-to("md") {
+      text-align: left;
+      margin-top: 0;
+    }
+  }
+
+  .position {
+    font-family: Futuro;
+    font-size: px-to-rem(18px);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px auto;
+
+    @include respond-to("md") {
+      text-align: left;
+    }
+  }
+
+  .description {
+    font-family: Ubuntu;
+    font-size: px-to-rem(18px);
+    font-weight: 300;
+    line-height: 32px;
+    margin: 15px auto;
+  }
+}

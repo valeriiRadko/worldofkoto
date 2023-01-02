@@ -1,0 +1,40 @@
+import React from "react"
+import Link from "next/link"
+import { animated, useSpring } from "react-spring"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faClose } from "@fortawesome/free-solid-svg-icons"
+import styles from "../../styles/components/popup/index.module.css"
+
+interface PopUpProps {
+  open: boolean
+  setOpen: (open: boolean) => void
+}
+
+const PopUp = ({ open, setOpen }: PopUpProps) => {
+  const styles1 = useSpring({ top: open ? "25vh" : "100vh" })
+  const styles2 = useSpring({ top: open ? "0vh" : "100vh" })
+
+  return (
+    <animated.div className={styles.popupcontainer} style={styles1}>
+      <div
+        onClick={() => {
+          setOpen(false)
+        }}
+        style={{ width: 50, height: 50, display: "flex" }}
+      >
+        <FontAwesomeIcon icon={faClose} color="black" />
+      </div>
+
+      <h1 style={{ fontFamily: "Ubuntu" }}>Join the whitelist</h1>
+      <Link
+        href="https://docs.google.com/forms/d/e/1FAIpQLScV9iER8pXjQn57Agfman85MO7AVLOHJ3W0Bbu0qgtxs8oyGg/viewform"
+        className={styles.artistjoinbutton}
+        target="_blank"
+      >
+        Join Whitelist
+      </Link>
+    </animated.div>
+  )
+}
+
+export default PopUp
