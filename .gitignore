@@ -38,3 +38,9 @@ next-env.d.ts
 # cypress
 cypress/videos
 cypress/screenshots
+
+# Sentry
+.sentryclirc
+
+# Sentry
+next.config.original.js
